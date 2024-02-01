@@ -5,13 +5,33 @@
 # Github Action Error:
 #  Error:  Logging at level: debug Configuration file: /github/workspace/./docs/_config.yml Theme: jekyll-theme-minima github-pages 228 | Error: The jekyll-theme-minima theme could not be found. 
 
-# 强制使用最新远程仓库
+# 强制使用最新的minima远程仓库
 remote_theme: jekyll/minima
 
+# set minima css
 minima:
   skin: auto
 
 # minima head link
 header_pages:
-  - index.md
-  - test.md
+  - pages/index.md
+  - pages/test.md
+  - pages/archive.md
+
+# Default Front Matter
+defaults:
+  -
+    scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: "page"
+      permalink: "/pages/:title/"
+  -
+    scope:
+      path: "posts"
+      type: "posts"
+    values:
+      layout: "post"
+      # https://jekyllrb.com/docs/permalinks/
+      permalink: "/posts/:categories/:year/:month/:day/:title/"
