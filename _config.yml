@@ -11,7 +11,7 @@ remote_theme: jekyll/minima
 minima:
   skin: auto
 
+# minima head link
 header_pages:
   - index.md
   - test.md
-  - 
