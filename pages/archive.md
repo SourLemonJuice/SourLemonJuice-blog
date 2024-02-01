@@ -1,5 +1,4 @@
 ---
-permalink: /archive
 layout: page
 title: Blog archive
 ---
