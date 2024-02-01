@@ -26,7 +26,8 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      permalink: "/:categories/:title/"
+      # 抱歉，请仔细看这里: https://jekyllrb.com/docs/permalinks/#pages
+      permalink: "/:path/:basename/"
   -
     scope:
       path: "posts"
