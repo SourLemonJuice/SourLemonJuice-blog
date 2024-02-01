@@ -11,10 +11,14 @@ remote_theme: jekyll/minima
 # 设置 minima 主题为 自动
 minima:
   skin: auto
+  social_links:
+    -
+      platform: github
+      user_url: "https://github.com/SourLemonJuice"
+      title:  Github
 
 # minima 顶部的连接
 header_pages:
-  - pages/index.md
   - pages/test.md
   - pages/archive.md
 
