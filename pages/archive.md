@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Blog archive
+layout: "page"
+title: "Blog archive"
 ---
 
 <ul>
