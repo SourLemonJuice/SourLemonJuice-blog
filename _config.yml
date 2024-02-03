@@ -8,9 +8,11 @@
 # 强制使用最新的minima远程仓库
 remote_theme: jekyll/minima
 
-# 设置 minima 主题为 自动
+# 设置 minima
 minima:
+  # 主题为 自动
   skin: auto
+  # 设置Github账号链接
   social_links:
     -
       platform: github
