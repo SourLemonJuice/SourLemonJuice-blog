@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: "/"
 title: "SourLemonJuice-blog"
 list_title: "发布列表"
 layout: "home"
