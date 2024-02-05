@@ -8,7 +8,8 @@ title: "Blog archive"
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} {{ post.date }}</a>
+      <!-- https://shopify.github.io/liquid/filters/date/ -->
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} --{{ post.date | date: "%F" }}</a>
     </li>
   {% endfor %}
 </ul>
