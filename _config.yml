@@ -40,5 +40,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      # https://jekyllrb.com/docs/permalinks/#built-in-formats
+      # 不要在 Github pages 上用短名称
+      # 就是这个: https://jekyllrb.com/docs/permalinks/#built-in-formats
       permalink: "/:categories/:year/:month/:day/:title/"
