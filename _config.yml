@@ -8,6 +8,8 @@
 # 强制使用最新的minima远程仓库
 remote_theme: jekyll/minima
 
+baseurl: /SourLemonJuice-blog
+
 # 设置 minima
 minima:
   # 主题为 自动
@@ -16,7 +18,7 @@ minima:
   social_links:
     -
       platform: github
-      user_url: "https://github.com/SourLemonJuice"
+      user_url: https://github.com/SourLemonJuice
       title:  Github
 
 # minima 顶部的连接
@@ -28,18 +30,18 @@ header_pages:
 defaults:
   -
     scope:
-      path: "pages"
-      type: "pages"
+      path: pages
+      type: pages
     values:
-      layout: "page"
+      layout: page
       # 抱歉，请仔细看这里: https://jekyllrb.com/docs/permalinks/#pages
-      permalink: "/:path/:basename"
+      permalink: /:path/:basename
   -
     scope:
-      path: "posts"
-      type: "posts"
+      path: posts
+      type: posts
     values:
-      layout: "post"
+      layout: post
       # 不要在 Github pages 上用短名称
       # 就是这个: https://jekyllrb.com/docs/permalinks/#built-in-formats
-      permalink: "/:categories/:year/:month/:day/:title"
+      permalink: /:categories/:year/:month/:day/:title
