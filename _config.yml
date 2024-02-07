@@ -12,6 +12,8 @@ remote_theme: jekyll/minima
 url: "https://sourlemonjuice.github.io"
 # 域名后，页面url前，的基本url
 baseurl: /SourLemonJuice-blog
+# 标签页标题
+title: SourLemonJuice-blog
 
 # jekyll 插件设置
 plugins:
