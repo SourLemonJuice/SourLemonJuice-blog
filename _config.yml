@@ -8,18 +8,36 @@
 # 强制使用最新的minima远程仓库
 remote_theme: jekyll/minima
 
+# 域名
+url: "https://sourlemonjuice.github.io"
+# 域名后，页面url前，的基本url
 baseurl: /SourLemonJuice-blog
+
+# jekyll 插件设置
+plugins:
+  - jekyll-remote-theme
 
 # 设置 minima
 minima:
   # 主题为 自动
   skin: auto
-  # 设置Github账号链接
+  # 设置Github主页链接
   social_links:
     -
       platform: github
       user_url: https://github.com/SourLemonJuice
       title:  Github
+
+# 网站页脚描述
+# The `>` after `description:` means to ignore line-breaks until next key.
+# If you want to omit the line-break after the end of text, use `>-` instead.
+description: >
+  A personal blog of SourLemonJuice
+
+# 作者元数据
+author:
+  name: SourLemonJuice
+  email: "null@null.net"
 
 # minima 顶部的连接
 header_pages:
