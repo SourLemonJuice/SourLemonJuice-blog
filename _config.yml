@@ -8,12 +8,18 @@
 # 强制使用最新的minima远程仓库
 remote_theme: jekyll/minima
 
-# 标签页标题
+# 网站标题
 title: SourLemonJuice-blog
 # 域名
 url: "https://sourlemonjuice.github.io"
 # 域名后，页面url前，的基本url
 baseurl: /SourLemonJuice-blog
+# 需要排除的文件 [DIR, FILE, ...]
+exclude: [README.md]
+# 页面编码(utf-8是jekyll 2.0.0及以后的默认值)
+encoding: utf-8
+# 时区设置
+timezone: Asia/Singapore
 
 # 网站页脚描述
 # The `>` after `description:` means to ignore line-breaks until next key.
