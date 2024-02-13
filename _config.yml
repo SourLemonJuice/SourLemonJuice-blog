@@ -36,6 +36,8 @@ author:
 plugins:
   # 远程主题支持
   - jekyll-remote-theme
+  # 生成 atom feed
+  - jekyll-feed
 
 # 设置 minima
 minima:
