@@ -1,0 +1,32 @@
+version: "Compose specification"
+
+services:
+  main: 
+    image: sourlemonjuiceblog:latest
+    container_name: sourlemonjuiceblog
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    volumes:
+      - type: bind
+        source: ./
+        target: /site/
+    ports:
+      - target: 4000
+        host_ip: 0.0.0.0
+        published: 4000
+        protocol: tcp
+
+  # nginx server without config
+  # nginx:
+  #   image: nginx:mainline-bookworm-perl
+  #   container_name: sourlemonjuiceblog-nginx
+  #   volumes:
+  #     - type: bind
+  #       source: ./_site/
+  #       target: /usr/share/nginx/html/
+  #   ports:
+  #     - target: 80
+  #       host_ip: 0.0.0.0
+  #       published: 80
+  #       protocol: tcp
