@@ -27,7 +27,7 @@
 #### Gemfile.lock 在 docker 中可能造成的问题
 
 构建镜像时会根据仓库里的 Gemfile 在容器内安装最新的gem软件包\
-运行时 bundle 如果检测到仓库目录内没有 Gemfile.lock 则会创建包含最新版本列表的锁定文件\
+运行时 bundle 如果检测到仓库目录内没有 Gemfile.lock 则会创建包含最新版本列表的锁定文件，但如果已经包含，并且使用了镜像中缺失的gem包，运行时就会报错\
 所以，如果在运行镜像时出现 bundle 的报错，可以删除仓库下的 Gemfile.lock 再试
 
 #### Docker支持来源与参考
