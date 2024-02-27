@@ -5,7 +5,8 @@ if [[ -n "$@" ]]; then
     Command="$@"
 else
     # 否则使用镜像缺省参数:
-    # CMD [ "bundle", "exec", "jekyll", "server", "--host", "0.0.0.0", "--port", "4000" ]
+    # ENTRYPOINT [ "bundle", "exec", "jekyll" ]
+    # CMD [ "server", "--host", "0.0.0.0", "--port", "4000" ]
     Command=""
 fi
 
@@ -14,4 +15,4 @@ docker run --rm --interactive --tty \
 --publish "4000:4000" \
 --name sourlemonjuiceblog \
 sourlemonjuiceblog:latest \
-$Command
+${Command}

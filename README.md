@@ -15,20 +15,24 @@
 
 #### 从 Docker compose 启动
 
-仓库支持 Docker compose 所以可以用`docker-compose up`启动镜像，第一次启动需要`--build`参数或者`docker-compose build`来构建镜像\
-镜像默认名称为 **sourlemonjuiceblog:latest**
+仓库支持 Docker compose 可以用`docker-compose up ~ServiceName~`启动镜像，注意不要使用没有参数的`up`子命令让服务全部启动，它们不是一整套的\
+第一次启动需要`--build`参数或者`docker-compose build ~ServiceName~`来构建镜像\
+与博客本身相关的镜像名称为 **sourlemonjuiceblog:latest**
 
-> 提示： `docker-compose up -d` 分离式启动容器（不占用终端）
+服务列表:
+
+- jekyllServer\
+  运行带有`--drafts`参数的 jekyll 临时预览服务器
+- jekyllBuild
+  构建网站放入 */_site/*
+- nginxServer\
+  没什么用的 nginx server 不要运行，它连配置文件都还没有呢现在哪里都不对
+
+> 提示： `docker-compose up -d ~ServiceName~` 分离式启动容器（不占用终端）
 
 #### docker 中运行自定义命令
 
 要在容器中执行自定义命令，参考 `/docker-SHELL.sh`
-
-#### Gemfile.lock 在 docker 中可能造成的问题
-
-构建镜像时会根据仓库里的 Gemfile 在容器内安装最新的gem软件包\
-运行时 bundle 如果检测到仓库目录内没有 Gemfile.lock 则会创建包含最新版本列表的锁定文件，但如果已经包含，并且使用了镜像中缺失的gem包，运行时就会报错\
-所以，如果在运行镜像时出现 bundle 的报错，可以删除仓库下的 Gemfile.lock 再试
 
 #### Docker支持来源与参考
 
