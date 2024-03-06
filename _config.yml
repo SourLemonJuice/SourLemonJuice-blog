@@ -24,8 +24,9 @@ timezone: Asia/Singapore
 # 网站页脚描述
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
-description: >
-  A personal blog of SourLemonJuice
+description:
+  A personal blog of SourLemonJuice.
+  Powered with jekyll
 
 # 作者元数据
 author:
