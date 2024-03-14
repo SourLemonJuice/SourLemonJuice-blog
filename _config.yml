@@ -26,8 +26,7 @@ timezone: Asia/Singapore
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description:
-  A personal blog of SourLemonJuice.
-  Powered with jekyll
+  A blog of SourLemonJuice
 
 # 作者元数据
 author:
