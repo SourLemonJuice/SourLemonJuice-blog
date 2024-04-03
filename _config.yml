@@ -30,7 +30,7 @@ description:
 
 # 作者元数据
 author:
-  name: "酸柠檬猹/SourLemonJuice"
+  name: 酸柠檬猹/SourLemonJuice
   email: SourLemonJuice233@outlook.com
 
 # 帖子共享协议
@@ -60,7 +60,7 @@ minima:
 # minima 顶部的连接
 header_pages:
   - pages/test.md
-  - pages/archive.md
+  - pages/archive.html
 
 # 设置默认 Front Matter
 defaults:

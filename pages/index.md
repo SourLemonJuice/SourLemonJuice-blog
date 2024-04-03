@@ -1,13 +1,19 @@
 ---
 permalink: "/"
 title: "SourLemonJuice-blog"
-list_title: "发布列表"
+list_title: "帖子列表"
 layout: "home"
 ---
 
-这是这个网站的首页，我也不知道要写点什么\
-应该会放一些计算机相关的东西在里面
+这是 [酸柠檬猹/SourLemonJuice](https://github.com/SourLemonJuice) 的*博客*？\
+应该会放一些计算机相关的东西在里面吧
 
-好了，就是这么多，谢谢github,能让我当一回鸽子(咕咕)
+就写这么多啦，谢谢 GitHub 能让我当一回鸽子(咕咕)
 
-由`Github Pages`与`jekyll`驱动 [原始储存库](https://github.com/SourLemonJuice/SourLemonJuice-blog)
+由 `Github Pages`, `jekyll` 驱动\
+jekyll 主题: [jekyll/minima](https://github.com/jekyll/minima)
+
+Git储存库位于 GitHub:[SourLemonJuice/SourLemonJuice-blog](https://github.com/SourLemonJuice/SourLemonJuice-blog)
+
+<!-- 这行分割线应该写在 layout 里吧 TODO -->
+---
