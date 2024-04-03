@@ -11,7 +11,7 @@ remote_theme: jekyll/minima
 # 网站标题
 title: SourLemonJuice-blog
 # 域名
-url: "https://sourlemonjuice.github.io"
+url: https://sourlemonjuice.github.io
 # 域名后，页面url前，的基本url
 baseurl: /SourLemonJuice-blog
 # 需要排除的文件 [DIR, FILE, ...] 记得加上所有不以 '_' '.' 开头的文件和文件夹
@@ -20,7 +20,7 @@ exclude: [README.md, Dockerfile, compose.yaml, docker-SHELL.sh]
 # 页面编码(utf-8是jekyll 2.0.0及以后的默认值)
 encoding: utf-8
 # 时区设置
-timezone: Asia/Singapore
+timezone: Asia/Shanghai
 
 # 网站页脚描述
 # The `>` after `description:` means to ignore line-breaks until next key.
@@ -30,8 +30,13 @@ description:
 
 # 作者元数据
 author:
-  name: SourLemonJuice
-  email: "SourLemonJuice233@outlook.com"
+  name: "酸柠檬猹/SourLemonJuice"
+  email: SourLemonJuice233@outlook.com
+
+# 帖子共享协议
+Creative_Commons:
+  CC_ShortName: CC-BY-4.0
+  CC_FullName: Attribution 4.0 International
 
 # jekyll 插件设置
 plugins:
@@ -49,13 +54,13 @@ minima:
     # 设置Github主页链接
     -
       platform: github
-      user_url: "https://github.com/SourLemonJuice"
+      user_url: https://github.com/SourLemonJuice
       title:  Github
 
 # minima 顶部的连接
 header_pages:
-  - "pages/test.md"
-  - "pages/archive.md"
+  - pages/test.md
+  - pages/archive.md
 
 # 设置默认 Front Matter
 defaults:
@@ -66,7 +71,7 @@ defaults:
     values:
       layout: page
       # 抱歉，请仔细看这里: https://jekyllrb.com/docs/permalinks/#pages
-      permalink: "/:path/:basename"
+      permalink: /:path/:basename
   -
     scope:
       path: posts
@@ -75,4 +80,4 @@ defaults:
       layout: post
       # 不要在 Github pages 上用短名称，似乎并不能识别，应该是版本太旧的问题
       # 就是这个: https://jekyllrb.com/docs/permalinks/#built-in-formats
-      permalink: "/:categories/:year/:month/:day/:title"
+      permalink: /:categories/:year/:month/:day/:title
