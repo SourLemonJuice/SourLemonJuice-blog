@@ -14,6 +14,3 @@ layout: "home"
 jekyll 主题: [jekyll/minima](https://github.com/jekyll/minima)
 
 Git储存库位于 GitHub:[SourLemonJuice/SourLemonJuice-blog](https://github.com/SourLemonJuice/SourLemonJuice-blog)
-
-<!-- 这行分割线应该写在 layout 里吧 TODO -->
----
