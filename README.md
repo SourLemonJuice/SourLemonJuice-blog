@@ -9,9 +9,10 @@
 
 ### 1.1.Github-Pages
 
-一种通过不完整的 jekyll 配置文件以及实际帖子内容组成的仓库
+使用它的一般都是只有不完整的 jekyll 配置文件以及实际帖子内容组成的仓库\
+但这也并不意味着有完整配置文件的仓库就不能用这种方式部署了
 
-那对于这个仓库，把 pages 的来源设置为该模式并且搜索目录为根目录，那等一会，部署会成功的
+对于这个储存库，把 pages 的来源设置为该模式并且搜索目录为根目录，那等一会，部署应该会成功的
 
 ### 1.2.本地运行
 
@@ -22,14 +23,15 @@
 ### 1.3.通过 Github-Action 部署
 
 支持使用 github 工作流处理部署的任务，这也是 Github-Pages 提供的最自由的部署方式\
-虽然这么说，但这个仓库并没有用到什么 jekyll 的新功能，但很好玩嘛
+当前部署操作的工作流是: **/.github/workflows/jekyll.yml**\
+虽然这么说，但这个仓库并没有用到什么 jekyll 的新功能，不过很好玩嘛
 
 ### 2.从 docker 构建或测试
 
 #### 2.1.从 Docker compose 启动
 
-仓库支持 Docker compose 可以用`docker-compose up ~ServiceName~`启动镜像，注意不要使用没有参数的`up`子命令让服务全部启动，它们不是一整套的\
-第一次启动需要`--build`参数或者`docker-compose build ~ServiceName~`来构建镜像\
+仓库支持 Docker compose 可以用`docker compose up ~ServiceName~`启动镜像，注意不要使用没有参数的`up`子命令让服务全部启动，它们不是一整套的\
+第一次启动需要`--build`参数或者`docker compose build ~ServiceName~`来构建镜像\
 与博客本身相关的镜像名称为 **sourlemonjuiceblog:latest**
 
 服务列表:
@@ -41,11 +43,11 @@
 - nginxServer\
   没什么用的 nginx server 不要运行，它连配置文件都还没有呢，现在哪里都不对
 
-> 提示： `docker-compose up -d ~ServiceName~` 分离式启动容器（不占用终端）
+> 提示： `docker compose up -d ~ServiceName~` 分离式启动容器（不占用终端）
 
-#### 2.2.docker 中运行自定义命令
+#### 2.2.Docker 中运行自定义命令
 
-要在容器中执行自定义命令，参考 `/docker-SHELL.sh`
+要在容器中执行自定义命令，或者了解默认命令解释，可以参考: **/docker-SHELL.sh**
 
 #### 2.3.Docker支持来源与参考
 
