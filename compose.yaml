@@ -4,14 +4,14 @@ services:
   jekyllServer:
     image: sourlemonjuiceblog:latest
     container_name: sourlemonjuiceblog-TestServer
-    command: [ "server", "--host", "0.0.0.0", "--port", "4000", "--drafts" ]
+    command: [ "bundle", "exec", "jekyll", "server", "--host", "0.0.0.0", "--port", "4000", "--drafts" ]
     build:
       context: ./
       dockerfile: ./Dockerfile
     volumes:
       - type: bind
         source: ./
-        target: /site/
+        target: /srv/blog/working-dir/
     ports:
       - target: 4000
         host_ip: 0.0.0.0
@@ -21,14 +21,14 @@ services:
   jekyllBuild:
     image: sourlemonjuiceblog:latest
     container_name: sourlemonjuiceblog-BuildSite
-    command: [ "build" ]
+    command: [ "bundle", "exec", "jekyll", "build" ]
     build:
       context: ./
       dockerfile: ./Dockerfile
     volumes:
       - type: bind
         source: ./
-        target: /site/
+        target: /srv/blog/working-dir/
 
   # just for fun don't use this!!!
   # nginx server without config
