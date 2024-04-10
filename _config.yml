@@ -52,6 +52,16 @@ plugins:
   - jekyll-remote-theme
   # 生成 atom feed
   - jekyll-feed
+  # 生成 seo(Search engine optimization)/搜索引擎优化 标签
+  # 注意: minima 主题的 _includes/head.html 中已经添加了 {% seo %}
+  - jekyll-seo-tag
+  # 生成 sitemap/站点地图
+  # 注意: "网站地图" 需要在其他 "有生成文件功能" 的插件执行后生成
+  # 默认情况下最后被需求的插件会被最后执行，所以一定要保持这行配置是插件序列中的最后一项
+  - jekyll-sitemap
+
+# 在 google search console 验证网站
+google_site_verification: "8LopVjCQclgmLdixaxx9rqAB55ji9yoRrtL5TZapDDM"
 
 # 设置 minima
 minima:
