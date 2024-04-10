@@ -1,8 +1,9 @@
 ---
 permalink: "/"
+layout: "home"
+lang: "zho-Hans"
 title: "SourLemonJuice-blog"
 list_title: "帖子列表"
-layout: "home"
 ---
 
 这是 [酸柠檬猹/SourLemonJuice](https://github.com/SourLemonJuice) 的*博客*？\

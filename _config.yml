@@ -8,14 +8,6 @@
 # 强制使用最新的minima远程仓库
 remote_theme: jekyll/minima
 
-# 宽松的语法风格总是让人在美观与安全之间来回摇摆，所以...
-# 该配置文件语法风格:
-# - 所有的 URL，文件相对路径 都应该使用"双引号"包裹
-# - 使用 [a, b] 的合集中的每个元素都需要"双引号"包裹
-# - 一个缩进使用 2 个空格
-# - 如果没有解析错误的话，其余的只写元素内容
-# - 同一序列的映射可以酌情选择是否一起使用双引号包裹
-
 # 网站标题
 title: SourLemonJuice-blog
 # 域名
@@ -24,11 +16,19 @@ url: "https://sourlemonjuice.github.io"
 baseurl: "/SourLemonJuice-blog"
 # 需要排除的文件 [DIR, FILE, ...] 记得加上所有不以 '_' '.' 开头的文件和文件夹
 # Gemfile 与 Gemfile.lock 会被默认忽略
-exclude: ["README.md", "Dockerfile", "compose.yaml", "docker-SHELL.sh"]
+exclude: ["README.md", "Config-Style.md", "Dockerfile", "compose.yaml", "docker-SHELL.sh"]
 # 页面编码(utf-8是jekyll 2.0.0及以后的默认值)
 encoding: utf-8
 # 时区设置
 timezone: Asia/Shanghai
+# 全局默认缺省语言(尽量使用最新的标准)
+# ---
+# 关于需要使用什么语言标签(即 IETF 语言标签): https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/lang
+# 维基百科上的 IETF 语言标签(整体组合方式): https://en.wikipedia.org/wiki/IETF_language_tag
+# 维基百科上的 ISO_639-3(第一位的"语言"代号): https://en.wikipedia.org/wiki/ISO_639-3
+# 维基百科上的 ISO_3166-1_alpha-2(两位的"地区"代号): https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+# 维基百科上的 ISO_15924("书写方式"代号): https://en.wikipedia.org/wiki/ISO_15924
+lang: eng
 
 # 网站页脚描述
 # The `>` after `description:` means to ignore line-breaks until next key.
@@ -80,11 +80,11 @@ header_pages:
   - "pages/test.md"
   - "pages/archive.html"
 
-# 设置默认 Front Matter
+# 设置默认 Front-Matter
 defaults:
   -
     scope:
-      path: "pages"
+      path: "pages/"
       type: pages
     values:
       layout: page
@@ -92,10 +92,18 @@ defaults:
       permalink: "/:path/:basename"
   -
     scope:
-      path: "posts"
+      path: "posts/"
       type: posts
     values:
       layout: post
       # 不要在 Github pages 上用短名称，似乎并不能识别，应该是版本太旧的问题
       # 就是这个: https://jekyllrb.com/docs/permalinks/#built-in-formats
       permalink: "/:categories/:year/:month/:day/:title"
+  # 配置语言信息
+  # 注意: 记得给 "pages" 单独写标签，它们还是单独管理的好(有些页面本身也不是中文2333)
+  -
+    scope:
+      path: "posts/简体中文/"
+      type: posts
+    values:
+      lang: zho-Hans

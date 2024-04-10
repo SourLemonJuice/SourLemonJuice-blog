@@ -3,7 +3,9 @@
 一个柠檬的个人网站储存库\
 由`jekyll`驱动
 
-> 前期的测试都是通过`github workflow`测试的所以有很多force的提交和hotfix什么的，抱歉啦
+> 前期的测试都是通过`github workflow`测试的所以有很多force的提交和hotfix什么的，抱歉啦 Github
+
+---
 
 ## 1.部署
 
@@ -53,3 +55,38 @@
 
 - 上级镜像: ruby:3.3.0-slim-bookworm
 - Dockerfile 参考于`bretfisher/jekyll-serve` [Github仓库](https://github.com/BretFisher/jekyll-serve)
+
+---
+
+## 2.需要注意的事
+
+### 2.1.配置风格
+
+配置文件的处理风格放在了 Config-Style.md 要写新配置或者 pages 的时候记得看\
+至于帖子嘛，大概率是用不到的，基本都是按照类型自动处理好了的
+
+### 2.2.语言代码
+
+第一语言码标准: ISO_639-3
+书写方式修饰码标准: ISO_15924
+
+- 所有页面的缺省使用: `eng`
+- 帖子被配置为根据存放的位置自动处理，例如:\
+  posts/简体中文/_posts/post.md -> `zho-Hans`
+- 所有 pages 需要手动编写语言标签
+
+### 2.3.网站流量分析
+
+目前配置里包含 google-search-console 的验证元信息\
+所以如果有人想借鉴网站的配置请**一定一定**要把相关配置移除去，虽然这并不是什么私密信息但可别忘了
+
+### 2.4.搜索引擎优化/SEO
+
+插件列表:
+
+- jekyll-sitemap
+- jekyll-seo-tag
+
+### 2.-.其他的碎碎念
+
+如果想在储存库根目录下放东西记得在 `exclude:` 里加上路径，不然网站的根目录下就也有啦
