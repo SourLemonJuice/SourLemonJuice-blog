@@ -8,15 +8,23 @@
 # 强制使用最新的minima远程仓库
 remote_theme: jekyll/minima
 
+# 宽松的语法风格总是让人在美观与安全之间来回摇摆，所以...
+# 该配置文件语法风格:
+# - 所有的 URL，文件相对路径 都应该使用"双引号"包裹
+# - 使用 [a, b] 的合集中的每个元素都需要"双引号"包裹
+# - 一个缩进使用 2 个空格
+# - 如果没有解析错误的话，其余的只写元素内容
+# - 同一序列的映射可以酌情选择是否一起使用双引号包裹
+
 # 网站标题
 title: SourLemonJuice-blog
 # 域名
-url: https://sourlemonjuice.github.io
+url: "https://sourlemonjuice.github.io"
 # 域名后，页面url前，的基本url
-baseurl: /SourLemonJuice-blog
+baseurl: "/SourLemonJuice-blog"
 # 需要排除的文件 [DIR, FILE, ...] 记得加上所有不以 '_' '.' 开头的文件和文件夹
 # Gemfile 与 Gemfile.lock 会被默认忽略
-exclude: [README.md, Dockerfile, compose.yaml, docker-SHELL.sh]
+exclude: ["README.md", "Dockerfile", "compose.yaml", "docker-SHELL.sh"]
 # 页面编码(utf-8是jekyll 2.0.0及以后的默认值)
 encoding: utf-8
 # 时区设置
@@ -30,8 +38,8 @@ description:
 
 # 作者元数据
 author:
-  name: 酸柠檬猹/SourLemonJuice
-  email: SourLemonJuice233@outlook.com
+  name: "酸柠檬猹/SourLemonJuice"
+  email: "SourLemonJuice233@outlook.com"
 
 # 帖子共享协议
 Creative_Commons:
@@ -54,30 +62,30 @@ minima:
     # 设置Github主页链接
     -
       platform: github
-      user_url: https://github.com/SourLemonJuice
+      user_url: "https://github.com/SourLemonJuice"
       title:  Github
 
 # minima 顶部的连接
 header_pages:
-  - pages/test.md
-  - pages/archive.html
+  - "pages/test.md"
+  - "pages/archive.html"
 
 # 设置默认 Front Matter
 defaults:
   -
     scope:
-      path: pages
+      path: "pages"
       type: pages
     values:
       layout: page
       # 抱歉，请仔细看这里: https://jekyllrb.com/docs/permalinks/#pages
-      permalink: /:path/:basename
+      permalink: "/:path/:basename"
   -
     scope:
-      path: posts
+      path: "posts"
       type: posts
     values:
       layout: post
       # 不要在 Github pages 上用短名称，似乎并不能识别，应该是版本太旧的问题
       # 就是这个: https://jekyllrb.com/docs/permalinks/#built-in-formats
-      permalink: /:categories/:year/:month/:day/:title
+      permalink: "/:categories/:year/:month/:day/:title"
