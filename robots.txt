@@ -1,0 +1,6 @@
+# Look this: https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt
+# It's con't work
+
+# Allow all url
+user-agent: *
+allow: /
