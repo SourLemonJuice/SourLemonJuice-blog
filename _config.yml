@@ -43,7 +43,7 @@ author:
 
 # 帖子共享协议
 Creative_Commons:
-  CC_ShortName: CC-BY-4.0
+  CC_ShortName: CC BY 4.0
   CC_FullName: Attribution 4.0 International
 
 # jekyll 插件设置
