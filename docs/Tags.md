@@ -9,17 +9,20 @@
 - Steam
 - Google
 - YouTube
+- Nintendo
 
 ### TYPE: Technology Terms
 
 - Network
 - UX/UI
+- Hacking
 
 ### TYPE: System Environments
 
 - PC-Desktop
 - Linux
 - Microsoft-Windows
+- Nintendo-Switch
 
 ### TYPE: Video Games
 
