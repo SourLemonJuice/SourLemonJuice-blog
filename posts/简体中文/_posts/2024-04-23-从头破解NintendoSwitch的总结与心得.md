@@ -46,6 +46,45 @@ GitHub链接: [CTCaer/hekate](https://github.com/CTCaer/hekate)
 
 安装好后就可以使用 hekate 的众多实用工具啦，如果认识英语或者善用翻译软件的话很快就会掌握的对吧，反正我相信你是不需要看其他半桶水发得奇怪视频的
 
+## hekate 启动项的配置
+
+详情请查阅 hekate 的文档。\
+这是我的 `hekate_ipl.ini` 文件（不完整），除了 `icon` 路径以外其他基本都能通用。
+
+```ini
+[config]
+# ...
+
+[HOS/OFW - sysMMC]
+fss0=atmosphere/package3
+emummc_force_disable=1
+stock=1
+icon=bootloader/res/switch_hue.bmp
+
+[CFW - emuMMC]
+fss0=atmosphere/package3
+kip1patch=nosigchk
+emummcforce=1
+atmosphere=1
+icon=bootloader/res/atmosphere_hue.bmp
+
+[CFW - sysMMC]
+fss0=atmosphere/package3
+kip1patch=nosigchk
+atmosphere=1
+emummc_force_disable=1
+icon=bootloader/res/payload_hue.bmp
+
+[fusee]
+payload=bootloader/payloads/atmosphere_fusee.bin
+icon=bootloader/res/payload_hue.bmp
+{}
+```
+
+注意，如果没有安装下文的大气层签名补丁，启动时报没有 `nosigchk` 是正常的
+
+顺便扔一个有关图标的 gbatemp 帖子[链接](https://gbatemp.net/threads/help-with-hekate-icons.636892/)
+
 ## Atmosphere/大气层 破解系统以及部分配置方式链接
 
 所谓的大气层系统就是用来实际破解HOS的一套工具，提供了让所有人熟知的哪些功能。\
