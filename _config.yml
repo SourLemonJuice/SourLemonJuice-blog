@@ -66,6 +66,9 @@ webmaster_verifications:
   google: 8LopVjCQclgmLdixaxx9rqAB55ji9yoRrtL5TZapDDM
   bing: BC0CFA01D203CF6FDE0923D19DA3EFEE
 
+# Google Analytics
+google_analytics: true
+
 # 设置 minima
 minima:
   # 主题为 自动
