@@ -33,7 +33,7 @@ MBTI: ISFP-T（内向 88％‚ 现实 57％‚ 感受 58％‚ 展望 67％‚ �
 
 好几年的 Minecraft 老玩家，会玩模组但不多，熟悉经典的原版特性但不会红石，并且也不会做建筑。做一个普普通通的玩家咯。
 
-另外，如果游戏玩法（物理）很新奇的话，我会对它极其感兴趣的哦。比如:\
+另外，如果游戏玩法（物理）很新奇的话，我会对它极其感兴趣的哦，比如:\
 《斯普拉遁3》《Nintendo Switch 运动》《半衰期：爱莉克斯》《UNDERDOGS》
 
 ## 计算机软硬件偏好
@@ -41,7 +41,7 @@ MBTI: ISFP-T（内向 88％‚ 现实 57％‚ 感受 58％‚ 展望 67％‚ �
 ### Operating System
 
 - **Half** `linux` guy. For now it's `Archlinux`.
-- Microsoft `Windows`... Easy to use, but not simple. I don't hate it.
+- Microsoft `Windows`... Easy to use, but not simple. I'm never hate it.
 - Forever rejecting `macOS` and `Apple`.
 - Weird `ChromeOS`
 
@@ -71,7 +71,7 @@ I'm tired bro.
 
 ## 碎碎念（孤独的自言自语）
 
-> 日期: 2024年 四月 星期二 24小时制 09:33:44 UTC+8（CST）
+> 日期: 2024年 四月30日 星期二 24小时制 09:33:44 UTC+8（CST）
 
 当无聊的破事占领了你的心... 状态看板、以前的储存库、现有的TODO、未来的计划... 都不重要了。\
 沟通是人类社会中极其重要的技能...\
