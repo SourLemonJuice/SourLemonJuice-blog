@@ -9,7 +9,7 @@ title: "Blog-Archive"
   {% for post in site.posts %}
   <li>
     <!-- https://shopify.github.io/liquid/filters/date/ -->
-    Post: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> on {{ post.date | date: "%F" }}
+    {{ post.date | date: "%F" }}: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     <br>
     Tags: {{ post.tags | escape }}
   </li>

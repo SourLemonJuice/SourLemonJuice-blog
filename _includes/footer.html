@@ -9,7 +9,7 @@
             <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
               <svg class="svg-icon orange">
                 <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-              </svg><span>Subscribe</span>
+              </svg><span>Atom Feed(Subscribe)</span>
             </a>
           </p>
         {%- if site.author %}
@@ -25,8 +25,14 @@
 
         {%- if site.Creative_Commons %}
         <!-- 不知道其他段落里的 class 都是干什么的，现在至少看起来不影响显示 -->
-        <p>All <b>posts</b> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">{{ site.Creative_Commons.CC_ShortName | escape }}</a></p>
+        <p>All content is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">{{ site.Creative_Commons.CC_ShortName | escape }}</a></p>
         {%- endif %}
+        <!-- 说明后端信息 -->
+        <p>
+          Powered with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/jekyll/minima">minima theme</a><br>
+          Deployed with <a href="https://pages.github.com/">GitHub Pages</a><br>
+          Repository is located on <a href="https://github.com/SourLemonJuice/SourLemonJuice-blog">GitHub</a>
+        </p>
         </div>
         <div class="footer-col">
           <p>{{ site.description | escape }}</p>

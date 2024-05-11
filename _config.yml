@@ -83,7 +83,7 @@ minima:
 
 # minima 顶部的连接
 header_pages:
-  - "pages/test.md"
+  - "pages/about.md"
   - "pages/archive.html"
 
 # 设置默认 Front-Matter
