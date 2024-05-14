@@ -10,12 +10,17 @@
 - Google
 - YouTube
 - Nintendo
+- OpenAI
 
 ### TYPE: Technology Terms
 
 - Network
 - UX/UI
 - Hacking
+- Machine-Learning
+- CLI/TUI
+- GUI
+- Utilities
 
 ### TYPE: System Environments
 
