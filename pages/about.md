@@ -7,10 +7,12 @@ noindex: true
 
 关于 酸柠檬猹/SourLemonJuice 的一些事情
 
+首先 `#include "github-profile.h"`
+
 ## 用户名
 
-通常使用`酸柠檬猹`作为主要用户名，但对于只接受 ASCII 字符的场景会使用`SourLemonJuice`\
-话虽如此，但仍有些地方随意使用了`SourLemonJuice`而非中文名
+通常使用`酸柠檬猹`作为主要用户名，但对于只接受 ASCII 字符的场景会使用`SourLemonJuice`。\
+话虽如此，但仍有些地方随意使用了`SourLemonJuice`而非中文名，可能是因为装酷或是担心这个中文名以后会变之类的吧
 
 - 酸柠檬猹 与 SourLemonJuice 之间并没有**翻译**关系，它们的历史背景并不完全相同
 - SourLemonJuice 的每个单词之间没有空格，并且如果允许的话大写所有单词首字母
