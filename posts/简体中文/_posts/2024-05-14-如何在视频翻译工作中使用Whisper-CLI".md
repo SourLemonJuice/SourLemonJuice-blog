@@ -1,5 +1,5 @@
 ---
-title: "如何在视频翻译中使用 Whisper CLI"
+title: "如何在视频翻译工作中使用 Whisper CLI"
 tags: ["OpenAI", "Machine-Learning", "CLI/TUI", "Utilities"]
 ---
 
