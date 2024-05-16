@@ -33,3 +33,10 @@ tags: ["DaVinci-Resolve", "Bug-Fix", "Utilities", "Linux", "PC-Desktop"]
 
 对了，如果不识别 GPU 的话记得看看装没装 OpenCL 相关的库。\
 Archwiki: <https://wiki.archlinux.org/title/GPGPU>
+
+## 不支持 MP4/h.264/h.265 视频以及 ACC 音频
+
+是的由于版权原因免费版的 linux davinci resolve 并不提供这些格式的导入与导出。\
+除非换成另外一种格式作为中间件，比如快速的 MOV 视频与高质量的 PCM 音频格式。
+
+虽说这样要去研究 ffmpeg 什么的了...
