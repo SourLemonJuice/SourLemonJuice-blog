@@ -21,6 +21,7 @@
 - CLI/TUI
 - GUI
 - Utilities
+- Bug-Fix
 
 ### TYPE: System Environments
 
@@ -43,3 +44,4 @@
 ## TBD tags
 
 - ZeroTier
+- DaVinci-Resolve
