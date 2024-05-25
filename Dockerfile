@@ -17,9 +17,12 @@ RUN bundle install --gemfile=/srv/blog/build-temp/Gemfile
 
 WORKDIR /srv/blog/working-dir/
 
+# 通知 jekyll 进入开发环境，某些主题会根据这一变量关闭遥测之类的功能以适合开发
+ENV JEKYLL_ENV=production
+
 EXPOSE 4000
 
-ENTRYPOINT []
+# ENTRYPOINT []
 
 # 运行时可以被覆盖的默认附加参数，[$ ... imageTag CMD]
 # 允许全部覆盖能让使用者更好理解对吧，再要折中就只能上脚本了
