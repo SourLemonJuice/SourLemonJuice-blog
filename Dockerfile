@@ -1,4 +1,4 @@
-FROM ruby:3.3.0-slim
+FROM ruby:3.3-slim-bookworm
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
@@ -18,7 +18,9 @@ RUN bundle install --gemfile=/srv/blog/build-temp/Gemfile
 WORKDIR /srv/blog/working-dir/
 
 # 通知 jekyll 进入开发环境，某些主题会根据这一变量关闭遥测之类的功能以适合开发
-ENV JEKYLL_ENV=production
+# 等下，看文档的时候没注意，生产模式是要部署时才要弄的哇www
+# github action 里 jekyll 模板已经写过这个了，别动咯
+# ENV JEKYLL_ENV=production
 
 EXPOSE 4000
 

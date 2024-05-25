@@ -1,8 +1,8 @@
-version: "Compose specification"
+name: sourlemonjuice-blog
 
 services:
-  jekyllServer:
-    image: sourlemonjuiceblog:latest
+  jekyll-server:
+    image: sourlemonjuice/sourlemonjuiceblog:latest
     container_name: sourlemonjuiceblog-TestServer
     command: [ "bundle", "exec", "jekyll", "server", "--host", "0.0.0.0", "--port", "4000", "--drafts" ]
     build:
@@ -18,8 +18,8 @@ services:
         published: 4000
         protocol: tcp
   
-  jekyllBuild:
-    image: sourlemonjuiceblog:latest
+  jekyll-build:
+    image: sourlemonjuice/sourlemonjuiceblog:latest
     container_name: sourlemonjuiceblog-BuildSite
     command: [ "bundle", "exec", "jekyll", "build" ]
     build:

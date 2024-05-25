@@ -31,12 +31,10 @@
 
 服务列表:
 
-- jekyllServer\
+- jekyll-server\
   运行带有`--drafts`参数的 jekyll 临时预览服务器
-- jekyllBuild\
+- jekyll-build\
   构建网站放入 */_site/*
-- nginxServer\
-  没什么用的 nginx server 不要运行，它连配置文件都还没有呢，现在哪里都不对
 
 > 提示： `docker compose up -d ~ServiceName~` 分离式启动容器（不占用终端）
 
@@ -46,5 +44,4 @@
 
 ### 2.Docker 支持来源与参考
 
-- 上级镜像: ruby:3.3.0-slim
 - Dockerfile 参考于`bretfisher/jekyll-serve` [Github 仓库](https://github.com/BretFisher/jekyll-serve)
