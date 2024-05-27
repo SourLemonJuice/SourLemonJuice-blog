@@ -3,8 +3,10 @@
 
   {%- include head.html -%}
 
-  {%- if site.google_analytics -%}
+  {%- if site.google_analytics == true and jekyll.environment == "production" -%}
     {%- include google-analytics.html -%}
+  {%- else -%}
+    <!-- Google Analytics was not include -->
   {%- endif -%}
 
   <body>

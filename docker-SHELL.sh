@@ -4,8 +4,7 @@
 if [[ -n "$@" ]]; then
     Command="$@"
 else
-    # 否则使用镜像缺省参数:
-    # ENTRYPOINT []
+    # 否则使用镜像缺省参数（以实际为准）:
     # CMD [ "bundle", "exec", "jekyll", "server", "--host", "0.0.0.0", "--port", "4000" ]
     Command=""
 fi
