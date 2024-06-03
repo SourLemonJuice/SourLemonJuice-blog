@@ -98,6 +98,15 @@ defaults:
       # 抱歉，请仔细看这里: https://jekyllrb.com/docs/permalinks/#pages
       permalink: "/:path/:basename"
   -
+    # For private pages...
+    scope:
+      path: "pages/secret-maybe/"
+      type: pages
+    values:
+      layout: page
+      permalink: "/secret/:basename"
+      noindex: true
+  -
     scope:
       path: "posts/"
       type: posts
