@@ -17,30 +17,12 @@ services:
         host_ip: 0.0.0.0
         published: 4000
         protocol: tcp
-  
+
   jekyll-build:
     image: sourlemonjuice/sourlemonjuiceblog:latest
     container_name: sourlemonjuiceblog-BuildSite
     command: [ "bundle", "exec", "jekyll", "build" ]
-    build:
-      context: ./
-      dockerfile: ./Dockerfile
     volumes:
       - type: bind
         source: ./
         target: /srv/blog/working-dir/
-
-  # just for fun don't use this!!!
-  # nginx server without config
-  nginxServer:
-    image: nginx:mainline-bookworm-perl
-    container_name: sourlemonjuiceblog-nginx
-    volumes:
-      - type: bind
-        source: ./_site/
-        target: /usr/share/nginx/html/
-    ports:
-      - target: 80
-        host_ip: 0.0.0.0
-        published: 80
-        protocol: tcp

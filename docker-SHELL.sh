@@ -10,8 +10,8 @@ else
 fi
 
 docker run --rm --interactive --tty \
---volume "./:/srv/blog/working-dir/" \
---publish "4000:4000" \
---name sourlemonjuiceblog \
-sourlemonjuiceblog:latest \
-${Command}
+    --volume "./:/srv/blog/working-dir/" \
+    --publish "4000:4000" \
+    --name sourlemonjuiceblog \
+    sourlemonjuice/sourlemonjuiceblog:latest \
+    ${Command}

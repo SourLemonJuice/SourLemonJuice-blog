@@ -1,10 +1,5 @@
+# minima theme
 # theme: minima
-# 警告: 不要使用 jekyll-theme-minima 只有通过这种方式设置的minima主题无法正常加载，这应该是一个特例
-# https://github.com/github/docs/issues/25314
-# 
-# Github Action Error:
-#  Error:  Logging at level: debug Configuration file: /github/workspace/./docs/_config.yml Theme: jekyll-theme-minima github-pages 228 | Error: The jekyll-theme-minima theme could not be found. 
-
 # 强制使用最新的minima远程仓库
 remote_theme: jekyll/minima
 
