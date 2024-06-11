@@ -99,8 +99,9 @@ defaults:
       type: pages
     values:
       layout: page
-      permalink: "/secret/:basename"
+      permalink: "/about/secret/:basename"
       noindex: true
+  # posts v1
   -
     scope:
       path: "posts/"
@@ -117,4 +118,14 @@ defaults:
       path: "posts/简体中文/"
       type: posts
     values:
+      lang: zho-Hans
+  # For posts v2
+  # 主旨大概就是弱化时间和语言概念吧，大概
+  -
+    scope:
+      path: "posts2/"
+      type: posts
+    values:
+      layout: post
+      permalink: "/:slugified_categories/:month/:title"
       lang: zho-Hans
