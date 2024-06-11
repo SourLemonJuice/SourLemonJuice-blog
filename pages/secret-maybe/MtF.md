@@ -5,7 +5,10 @@ sitemap: flase
 
 # MtF for me
 
-> Male to Female...
+NOTE: TBD
+
+> Male to Female... or Transfemme?\
+> Anyway, TBD
 
 怕于面对吗？\
 但这是困扰我相当久的问题了，我有足够的理由相信我是，但我真的有这样的勇气吗?

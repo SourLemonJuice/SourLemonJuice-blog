@@ -5,6 +5,10 @@ title: "对于未来"
 noindex: true
 ---
 
+## NOTE
+
+This is a **Unstable** Page?
+
 ## 学习方向
 
 不想学 web 前端开发。\
