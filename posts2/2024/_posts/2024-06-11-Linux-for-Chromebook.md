@@ -174,6 +174,17 @@ Archwiki 中说的已经挺多的了（咕\
 
 Archwiki 中说可以在 `/usr/include/linux/input-event-codes.h` 下找，但好像会比这些工具的输出少一些，所以还是看工具的输出吧。
 
+#### 2.3.记得刷新HWDB的数据库哦
+
+啊，对了这些东西不是实时生效的，刷新方式什么的去看 wiki
+
+简单点，就是用最高权限执行这些:
+
+```shell
+systemd-hwdb update
+udevadm trigger
+```
+
 ## --、碎碎念
 
 - 其实到现在我也不清楚 [EC/集成控制器](https://chromium.googlesource.com/chromiumos/platform/ec/+/d92daea73957789df43e458d31fadae7d2c64989/README.md) 是怎么参与启动流程的
