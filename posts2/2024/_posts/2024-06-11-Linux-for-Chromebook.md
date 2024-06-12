@@ -110,6 +110,19 @@ ChromiumOS 的文档在这里: [AltFw](https://www.chromium.org/chromium-os/deve
 
 有关兼容性，要不看看 mrchromebox 做的 [Supported Devices](https://mrchromebox.tech/#devices)（及其子链接们）
 
+### 0.发行版的选择
+
+对于一个非标准的笔记本，相对小众点的发行版是第一个就要被排除的\
+虽然我用的不多，但笔记本的 触控板/屏幕背光/键盘背光 在linux下多多少少会有点小毛病
+
+对于我的 Pixelbook Go（而不是你的设备）:
+
+- Debian 还好，触摸板有点卡卡的
+- PoP!_OS 的触摸板滚动还是有点问题，因为触摸屏的存在屏幕键盘会一直被调用出来还关不掉 [issue](https://github.com/pop-os/shell/issues/1503)。而且没办法调整键盘背光（但对应的内核模块已经加载）
+- 现在用的是 Fedora Workstation，超棒的，但以前没用过还得熟悉熟悉
+
+不过似乎所有发行版的屏幕背光的自动亮度调整都不顺滑，对我倒是无所谓的
+
 ### 1.音频部分
 
 这里有个超棒的项目: [WeirdTreeThing/chromebook-linux-audio](https://github.com/WeirdTreeThing/chromebook-linux-audio)
@@ -119,13 +132,47 @@ ChromiumOS 的文档在这里: [AltFw](https://www.chromium.org/chromium-os/deve
 或许 [fascinatingcaptain/CBFixesAndTweaks](https://github.com/fascinatingcaptain/CBFixesAndTweaks)\
 或者 [How do I setup a keyboard mapping compatible with a Chromebook?](https://askubuntu.com/questions/566060/how-do-i-setup-a-keyboard-mapping-compatible-with-a-chromebook)
 
-好吧，我不知道，大多数按键拿 [xmodmap](https://wiki.archlinux.org/title/xmodmap) 都能映射，我也不熟，也不知道别的，哇wwww\
-为什么 Assistant 键不能识别啊啊，[我不知道](https://github.com/dnschneid/crouton/issues/3505)\
-别问
+不过有些问题，Chromebook 上独有的 Assistant 按键在 [xmodmap](https://wiki.archlinux.org/title/xmodmap) 里是识别不到的，可以参考下这里: [crouton:issue#3505](https://github.com/dnschneid/crouton/issues/3505)
 
-我要鲨人啦
+所以我们需要些更底层的方式将 Assistant 按键键值映射到其他的值上，也就是直接给 input event 开刀。\
+这方面上 Archwiki 里已经有了相对详细的说明: [Map scancodes to keycodes](https://wiki.archlinux.org/title/Map_scancodes_to_keycodes)\
+不过，很多概念我也懒得搞明白了，下面都是随便写的，记得看上面的链接
 
-T B D // 我会回来的
+整个过程需要用到两个工具
+
+- `evtest` 用来测试键值
+- `evemu-describe` 用来获取 event 详细信息
+
+而最终目标则是将**某个**特定键盘，或**某些**类型的键盘的 Assistant 转换成类似 Meta 的按键。\
+实现映射功能的是 systemd-hwdb，它的配置文件允许匹配
+
+- `input:` 开头的映射块名称，类似\
+  evdev:input:b0003v32ACp0012e0111-*
+- `模块名:dmi:...` 开头的 DMI 表示符，类似\
+  evdev:atkbd:dmi:*
+
+#### 2.1.匹配事件映射块
+
+配置文件中可以使用的通配符在手册中有写: [HWDB(7)](https://man.archlinux.org/man/core/systemd/hwdb.7.en)\
+要想获取 DMI 名称可以运行不带参数的 `evemu-describe`，并选择看起来像键盘的 event 设备，详细信息中应该会有写。虽说我也不知道这堆值具体都是什么意思。\
+加上通配符，最终效果可能类似这样: `evdev:atkbd:dmi:bvn*:bvr*:bd*:svnGoogle:pnAtlas:pvr*`\
+反正这个是能匹配 Pixelbook Go(硬件代号Atlas) 的键盘啦
+
+或者可以按照 [#Remap specific device](https://wiki.archlinux.org/title/Map_scancodes_to_keycodes#Remap_specific_device) 章节所述的那样，直接使用 `input:` 开头的映射块名称，看起来更直观一些，笔记本的内置键盘也不可能有第二个，所以看心情咯。\
+匹配字段的效果类似:\
+`evdev:input:b0000000000000A*`
+
+#### 2.2.映射键值
+
+Archwiki 中说的已经挺多的了（咕\
+不过可以补充两句
+
+每条映射看起来是这样的:\
+`KEYBOARD_KEY_1a=leftalt`\
+其中 `1a` 是用 `evtest` 测出来的键值，而等号右边的字符在运行 `evtest`, `evemu-describe` 时会有输出，类似: `Event code 30 (KEY_A)`\
+将其中的 `A` 转换成小写(`a`)就是需要放到等号右侧的目标键值了。比如: `KEY_LEFTMETA` -> `leftmeta`
+
+Archwiki 中说可以在 `/usr/include/linux/input-event-codes.h` 下找，但好像会比这些工具的输出少一些，所以还是看工具的输出吧。
 
 ## --、碎碎念
 
@@ -133,3 +180,4 @@ T B D // 我会回来的
 - 所以 AP 到底指代的是什么 ChromeOS 还是处理器硬件模块，指代关系怎么老是变化阿喂
 - 你知道吗，我因为偷懒花了80多块钱买 SuzyQ... 有能力的花完全可以自己买几个电阻和分线版做一个呀
 - 我的2023年是和 Nintendo Switch 过的，2024上半年是和 Chromebook 过的，要不回头买点别的旧的能“破解/不走寻常路”的怪设备当成个爱好玩233
+- 要不是我真的喜欢 Pixelbook Go 的外观和做工，我才不会折腾这么多东西呢，有关 Chromebook 的社区资料真的没多少（累
