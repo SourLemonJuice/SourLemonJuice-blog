@@ -133,4 +133,4 @@ Oh right, no NVIDIA GPU! (just for my PC)
 
 ## 碎碎念？
 
-[Link]({{- site.url -}}{{- site.baseurl -}}/secret/mood-swings)
+[Link]({{- site.url -}}{{- site.baseurl -}}/about/secret/mood-swings)
