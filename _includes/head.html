@@ -10,5 +10,11 @@
   {%- feed_meta -%}
 
   {%- include custom-head.html -%}
-  
+
+  {%- if site.microsoft_clarity == true and jekyll.environment == "production" -%}
+    {%- include microsoft-clarity.html -%}
+  {%- else -%}
+  <!-- Microsoft Clarity was not include -->
+  {%- endif -%}
+
 </head>

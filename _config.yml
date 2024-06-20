@@ -63,6 +63,8 @@ webmaster_verifications:
 
 # Google Analytics
 google_analytics: true
+# Microsoft Clarity
+microsoft_clarity: true
 
 # 设置 minima
 minima:
