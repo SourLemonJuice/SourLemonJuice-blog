@@ -29,7 +29,7 @@ lang: eng
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description:
-  A blog of SourLemonJuice
+  A blog of 酸柠檬猹/SourLemonJuice. Trying to be a gentle and understanding guy.
 
 # 作者元数据
 author:
@@ -130,7 +130,7 @@ defaults:
       type: posts
     values:
       lang: zho-Hans
-  # For posts v2
+  # posts v2
   # 主旨大概就是弱化时间和语言概念吧，大概
   -
     scope:
