@@ -61,6 +61,7 @@ webmaster_verifications:
   google: 8LopVjCQclgmLdixaxx9rqAB55ji9yoRrtL5TZapDDM
   bing: BC0CFA01D203CF6FDE0923D19DA3EFEE
 
+# Some analytics tools added with me
 # Google Analytics
 google_analytics: true
 # Microsoft Clarity
@@ -76,7 +77,15 @@ minima:
     -
       platform: github
       user_url: "https://github.com/SourLemonJuice"
-      title:  Github
+      title:  GitHub Profile
+    -
+      platform: mastodon
+      user_url: "https://mastodon.social/@SourLemonJuice"
+      title: mastodon.social
+    -
+      platform: x
+      user_url: "https://x.com/LemonJuice3893"
+      title: Twitter/X
 
 # minima 顶部的连接
 header_pages:
