@@ -29,7 +29,7 @@ lang: eng
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description:
-  A blog of 酸柠檬猹/SourLemonJuice. Trying to be a gentle and understanding guy.
+  A blog of 酸柠檬猹/SourLemonJuice. Trying to be a gentle and understanding person.
 
 # 作者元数据
 author:
@@ -83,6 +83,10 @@ minima:
       user_url: "https://github.com/SourLemonJuice"
       title:  GitHub Profile
     -
+      platform: gitlab
+      user_url: "https://gitlab.com/SourLemonJuice"
+      title: GitLab Profile
+    -
       platform: mastodon
       user_url: "https://mastodon.social/@SourLemonJuice"
       title: mastodon.social
@@ -94,6 +98,7 @@ minima:
 # minima 顶部的连接
 header_pages:
   - "pages/about.md"
+  - "pages/social.md"
   - "pages/archive.html"
 
 # 设置默认 Front-Matter

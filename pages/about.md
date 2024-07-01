@@ -1,7 +1,7 @@
 ---
 permalink: "/about"
 lang: "zho-Hans"
-title: "关于/自我介绍"
+title: "关于"
 noindex: true
 ---
 
