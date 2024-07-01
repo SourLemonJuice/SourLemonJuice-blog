@@ -20,3 +20,5 @@ noindex: true
 - [Mastodon - mastodon.social](https://mastodon.social/@SourLemonJuice)
 - [Twitter/X](https://x.com/LemonJuice3893)
 - [VRChat](https://vrchat.com/home/user/usr_17d2f8db-b256-448d-8405-b62b860025c5)
+- [Discord](https://youtu.be/dQw4w9WgXcQ)
+- [YouTube](https://www.bilibili.com/video/BV1GJ411x7h7)
