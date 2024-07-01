@@ -25,7 +25,10 @@
 
         {%- if site.Creative_Commons %}
         <!-- 不知道其他段落里的 class 都是干什么的，现在至少看起来不影响显示 -->
-        <p>All content is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">{{ site.Creative_Commons.CC_ShortName | escape }}</a></p>
+        <p>
+          Website <a href="{{- site.url -}}{{- site.baseurl -}}/policies/privacy">Privacy Policy</a><br>
+          All content is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">{{ site.Creative_Commons.CC_ShortName | escape }}</a>
+        </p>
         {%- endif %}
         <!-- 说明后端信息 -->
         <p>
