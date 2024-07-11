@@ -11,7 +11,7 @@ noindex: true
 
 一些关于 酸柠檬猹/SourLemonJuice 的事情，虽说也不怎么全但比没有强
 
-人称代词: 她/它/他/祂
+中国大陆 - 她/它/他/祂
 
 NOTE: 这里要添加的东西其实还有很多的说
 
@@ -30,10 +30,10 @@ NOTE: 这里要添加的东西其实还有很多的说
 非常在乎现实世界与常规网络中的个人隐私，还请不要触犯我的底线哦。其他信息可以看 GitHub。\
 总之喜欢懂礼貌的家伙
 
-MBTI-2024-03: ISFP-T - 内向 88％‚ 现实 57％‚ 感受 58％‚ 展望 67％‚ 起伏不定 85％\
-MBTI-2024-05: INFP-T - 内向 75％‚ 有远见 59％‚ 感受 59％‚ 展望 75％‚ 起伏不定 76％
+MBTI:
 
-[社交媒体列表]({{- site.url -}}{{- site.baseurl -}}/about/social)
+- 2024-03: 内向 88％‚ 现实 57％‚ 感受 58％‚ 展望 67％‚ 起伏不定 85％ - ISFP-T\
+- 2024-05: 内向 75％‚ 有远见 59％‚ 感受 59％‚ 展望 75％‚ 起伏不定 76％ - INFP-T
 
 ### 关于虚拟现实与社交理念
 
@@ -54,6 +54,8 @@ I'm learning English? But not great at spelling and speaking in real time.
 - SourLemonJuice 的每个单词之间没有空格，并且如果允许的话大写所有单词首字母
 
 ## 兴趣爱好与情绪表达
+
+说人话就是想不到怎么描述乱写的一个章节
 
 - 计算机方面的东西我都是来者不拒的哦
 - 其实不怎么喜欢玩电子游戏的
@@ -98,11 +100,38 @@ Minecraft 启蒙与陪伴了我的游戏和计算机领域，算是个我该永�
 沃玛也算是第一个给我温暖和爱意的人了呀，我怎么会不感激呢。\
 人家花大半天时间拉回来的你可要好好生活哦。
 
-## 计算机软硬件偏好
+## Computer Science
+
+### Programming Language
+
+#### Shell Script
+
+To be exact, it's bash script.\
+Because the Linux.
+
+#### C Language
+
+Learning。\
+But I should have learned a lot already.
+
+#### C++
+
+Just starting to learn.
+
+#### Java
+
+Learned a **little** before.\
+I was thinking for writing mods for Minecraft at the time.\
+But... I didn't work it out.
+
+#### Todo to learn language
+
+- Javascript/Typescript/Little-Web
+- Python
 
 ### Operating System
 
-- **Half** `linux` guy. For now it's `Archlinux`.
+- **Half** `Linux` guy. For now it's `Archlinux`.
 - Microsoft `Windows`... Easy to use, but not simple. I'm never hate it.
 - Forever rejecting `macOS` and `Apple`.
 - Weird `ChromeOS`, but it's funny and useful.
@@ -119,17 +148,20 @@ But seriously I don't know much about desktop visual design.
 Really long name...
 
 - Only `Visual Studio Code`
+- Or just use `Terminal` and `TextEditor`
 
 ### Game Engine
 
 - Fuck You Unity Engine
 - But who do I love?
 
+Wait, I don't know how to make a game. Why am I talking about game engines?
+
 ### Hardware
 
 I'm tired bro.
 
-Oh right, no NVIDIA GPU! (just for my PC)
+Oh right, no NVIDIA GPU! (just for game but not for work)
 
 ## 碎碎念？
 
