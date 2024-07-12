@@ -5,6 +5,10 @@
   2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
 {% endcomment %}
 
+{%- if page.noindex -%}
+<meta name="robots" content="noindex">
+{%- endif -%}
+
 {%- if site.google_analytics == true and jekyll.environment == "production" -%}
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Q9ES4DJXS"></script>
@@ -16,7 +20,7 @@
   gtag('config', 'G-7Q9ES4DJXS');
 </script>
 {%- else -%}
-<!-- Google Analytics is not included -->
+<!-- Google Analytics was not included -->
 {%- endif -%}
 
 {%- if site.microsoft_clarity == true and jekyll.environment == "production" -%}
@@ -28,5 +32,5 @@
   })(window, document, "clarity", "script", "muwoohtxpb");
 </script>
 {%- else -%}
-<!-- Microsoft Clarity is not included -->
+<!-- Microsoft Clarity was not included -->
 {%- endif -%}

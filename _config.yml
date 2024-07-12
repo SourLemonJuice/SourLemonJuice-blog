@@ -1,7 +1,7 @@
 # minima theme
 # theme: minima
 # 强制使用最新的minima远程仓库
-remote_theme: jekyll/minima
+remote_theme: https://github.com/SourLemonJuice/minima-for-SourLemonJuice
 
 # 网站标题
 title: SourLemonJuice-blog
