@@ -36,11 +36,6 @@ author:
   name: "酸柠檬猹/SourLemonJuice"
   email: "SourLemonJuice233@outlook.com"
 
-# 帖子共享协议
-Creative_Commons:
-  CC_ShortName: CC BY 4.0
-  CC_FullName: Attribution 4.0 International
-
 # jekyll 插件设置
 plugins:
   # 远程主题支持
@@ -103,6 +98,7 @@ header_pages:
 
 # 设置默认 Front-Matter
 defaults:
+  # all the pages(not posts)
   -
     scope:
       path: "pages/"
@@ -111,6 +107,9 @@ defaults:
       layout: page
       # 抱歉，请仔细看这里: https://jekyllrb.com/docs/permalinks/#pages
       permalink: "/:path/:basename"
+      creative_commons:
+        ShortName: CC BY 4.0
+        URL: "https://creativecommons.org/licenses/by/4.0/"
   -
     # For private pages...
     scope:
@@ -120,6 +119,9 @@ defaults:
       layout: page
       permalink: "/about/secret/:basename"
       noindex: true
+      creative_commons:
+        ShortName: CC BY-ND 4.0
+        URL: "https://creativecommons.org/licenses/by-nd/4.0/"
   # posts v1
   -
     scope:
@@ -130,6 +132,9 @@ defaults:
       # 不要在 Github pages 上用短名称，似乎并不能识别，应该是版本太旧的问题
       # 就是这个: https://jekyllrb.com/docs/permalinks/#built-in-formats
       permalink: "/:categories/:year/:month/:day/:title"
+      creative_commons:
+        ShortName: CC BY 4.0
+        URL: "https://creativecommons.org/licenses/by/4.0/"
   # 配置语言信息
   # 注意: 记得给 "pages" 单独写标签，它们还是单独管理的好(有些页面本身也不是中文2333)
   -
@@ -148,3 +153,6 @@ defaults:
       layout: post
       permalink: "/:slugified_categories/:month/:title"
       lang: zho-Hans
+      creative_commons:
+        ShortName: CC BY 4.0
+        URL: "https://creativecommons.org/licenses/by/4.0/"

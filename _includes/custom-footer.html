@@ -6,6 +6,13 @@
   Only put them into an html can use it but not _config.yaml.
 {% endcomment %}
 
-<a href="https://creativecommons.org/licenses/by/4.0/">{{ site.Creative_Commons.CC_ShortName | escape }}</a>
-| <a href="{{- site.url -}}{{- site.baseurl -}}/policies/privacy">Privacy Policy</a>
+{% if page.creative_commons %}
+This page published under <a href="{{ page.creative_commons.URL }}">{{ page.creative_commons.ShortName | escape }}</a> license
+<br>
+{% else %}
+This page does not specify a publishing license
+<br>
+{% endif %}
+
+<a href="{{- site.url -}}{{- site.baseurl -}}/policies/privacy">Privacy Policy</a>
 | <a href="https://github.com/SourLemonJuice/SourLemonJuice-blog">Website Repository</a>
