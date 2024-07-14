@@ -1,7 +1,7 @@
 ---
 permalink: "/about/social"
 lang: "zho-Hans"
-title: "社交平台列表"
+title: "社交平台"
 noindex: true
 ---
 

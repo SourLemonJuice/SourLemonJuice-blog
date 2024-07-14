@@ -10,9 +10,6 @@ title: "帖子归档"
   <li>
     <!-- https://shopify.github.io/liquid/filters/date/ -->
     {{ post.date | date: "%F" }}: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    <br>
-    Tags: {{ post.tags | escape }}
   </li>
-  <br>
   {% endfor %}
 </ul>

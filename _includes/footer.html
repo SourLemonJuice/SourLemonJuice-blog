@@ -1,7 +1,7 @@
 <footer class="site-footer h-card">
     <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
-    <div class="wrapper">
+    <div class="wrapper-sidebar">
 
       <div class="footer-col-wrapper">
         <div class="footer-col">
@@ -9,10 +9,10 @@
             <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
               <svg class="svg-icon orange">
                 <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-              </svg><span>Atom Feed(Subscribe)</span>
+              </svg><span>Subscribe(Atom feed)</span>
             </a>
           </p>
-        {%- if site.author %}
+          {%- if site.author %}
           <ul class="contact-list">
             {% if site.author.name -%}
               <li class="p-name">{{ site.author.name | escape }}</li>
@@ -21,28 +21,24 @@
               <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
             {%- endif %}
           </ul>
-        {%- endif %}
+          {%- endif %}
 
-        {%- if site.Creative_Commons %}
-        <!-- 不知道其他段落里的 class 都是干什么的，现在至少看起来不影响显示 -->
-        <p>
-          Website <a href="{{- site.url -}}{{- site.baseurl -}}/policies/privacy">Privacy Policy</a><br>
-          All content is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">{{ site.Creative_Commons.CC_ShortName | escape }}</a>
-        </p>
-        {%- endif %}
-        <!-- 说明后端信息 -->
-        <p>
-          Powered with <a href="https://jekyllrb.com/">Jekyll</a> and
-          <a href="https://github.com/SourLemonJuice/minima-for-SourLemonJuice">minima theme(fork)</a>
-          <br>
-          Deployed with <a href="https://pages.github.com/">GitHub Pages</a>
-          <br>
-          Website repository is located on <a href="https://github.com/SourLemonJuice/SourLemonJuice-blog">GitHub</a>
-        </p>
+          <!-- 说明后端信息 -->
+          <ul class="contact-list">
+            <li>
+              Powered with <a href="https://jekyllrb.com/">Jekyll</a> and
+              <a href="https://github.com/SourLemonJuice/minima-for-SourLemonJuice">minima theme(fork)</a>
+            </li>
+            <li>Deployed with <a href="https://pages.github.com/">GitHub Pages</a></li>
+          </ul>
         </div>
         <div class="footer-col">
           <p>{{ site.description | escape }}</p>
         </div>
+      </div>
+
+      <div class="footer-custom">
+        {%- include custom-footer.html -%}
       </div>
 
       <div class="social-links">
