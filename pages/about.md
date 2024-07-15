@@ -13,9 +13,7 @@ noindex: true
 
 中国大陆 - 她/它/他/祂
 
-NOTE: 这里要添加的东西其实还有很多的说
-
-## 社交
+## 作为一个人类个体其内心的一些特点
 
 这应该算社恐吗？缺些关爱吧。\
 陌生人多的时候由于情绪测绘功能的过载，可能会显得有些 害羞/自我怀疑/甚至一些...极端情绪。嘛，心情很好时除外。
@@ -30,18 +28,24 @@ NOTE: 这里要添加的东西其实还有很多的说
 非常在乎现实世界与常规网络中的个人隐私，还请不要触犯我的底线哦。其他信息可以看 GitHub。\
 总之喜欢懂礼貌的家伙
 
-MBTI:
+其实，我几乎所有公开社交账号里都不会单独写一份介绍，而是放一个指向 GitHub 的链接。\
+一是方便些而且 GitHub 的主页可以写不限量的 Markdown 诶，没什么其他平台能做到了。\
+二是这样所有要看我成分的人必然会先经过 GitHub，这样对于不懂技术的人来说可以先吓唬一下啦
 
-- 2024-03: 内向 88％‚ 现实 57％‚ 感受 58％‚ 展望 67％‚ 起伏不定 85％ - ISFP-T\
+### MBTI 人格
+
+我对这种东西的可靠性必然是存疑的，至少这五种属性不是二元的呀，这也是为什么我想把完整的百分比放出来。\
+人类的思维是一套很复杂的东西呢，用几个数值又怎么能表示到位呢
+
+- 2024-03: 内向 88％‚ 现实 57％‚ 感受 58％‚ 展望 67％‚ 起伏不定 85％ - ISFP-T
 - 2024-05: 内向 75％‚ 有远见 59％‚ 感受 59％‚ 展望 75％‚ 起伏不定 76％ - INFP-T
 
-### 关于虚拟现实与社交理念
+### 关于虚拟现实中的人类风格的社交
 
 虚拟现实中的社交剥离了许多现实中获取信息的方式，这让流畅的沟通更加困难，另一方面上也能不同幅度的降低人与人之间的歧视，偏见与刻板印象。\
-我更喜欢了解别人的性格本身，而非它在现实世界中的各种属性与标签。VRChat 现在的状态其实也正合其意。\
-总之，这会是我的社交理念啦。
+我到也是更喜欢了解别人的性格本身，而非它在现实世界中的各种属性与标签
 
-## 语言
+## 非母语语言
 
 I'm learning English? But not great at spelling and speaking in real time.
 
@@ -53,9 +57,7 @@ I'm learning English? But not great at spelling and speaking in real time.
 - 酸柠檬猹 与 SourLemonJuice 之间并没有**翻译**关系，它们的历史背景并不完全相同
 - SourLemonJuice 的每个单词之间没有空格，并且如果允许的话大写所有单词首字母
 
-## 兴趣爱好与情绪表达
-
-说人话就是想不到怎么描述乱写的一个章节
+## 想不到怎么描述乱写的一个章节
 
 - 计算机方面的东西我都是来者不拒的哦
 - 其实不怎么喜欢玩电子游戏的
@@ -65,9 +67,9 @@ I'm learning English? But not great at spelling and speaking in real time.
 - 打字时不喜欢加句号和常见的句尾符号，也可能是写的东西成段的少。总之我超爱换行符的，而且中文的情绪表达确实不依赖句尾标点
 - 大概只有书籍才能体现语言系统本身的魅力吧，但我也不常看啦
 
-## 电子游戏偏好
+## 电子游戏们
 
-对 PVP fps 不怎么感兴趣。\
+对 PVP, FPS 不怎么感兴趣。\
 剧情向的嘛... 不过如果做的确实很好的话我也会去认真玩玩的。\
 对建造规划类游戏可能还好？但不过我已经好久没从这种类型上得到快感了，不如 IDE 好玩。\
 优秀的模拟经营类也很棒哦，不过挺花时间的平时总是没有动力打开，但很喜欢的啦。
@@ -124,21 +126,21 @@ Learned a **little** before.\
 I was thinking for writing mods for Minecraft at the time.\
 But... I didn't work it out.
 
-#### Todo to learn language
+#### Todo to learn
 
-- Javascript/Typescript/Little-Web
+- Javascript/Typescript/Web
 - Python
 
 ### Operating System
 
-- **Half** `Linux` guy. For now it's `Archlinux`.
+- **Half** `Linux` guy. For now it's `Archlinux`, maybe it will be `Fedora` in the future.
 - Microsoft `Windows`... Easy to use, but not simple. I'm never hate it.
 - Forever rejecting `macOS` and `Apple`.
 - Weird `ChromeOS`, but it's funny and useful.
 
 ### GUI Visual Design
 
-- `Material Design` forever!
+- `Material Design(3)` forever!
 - And some `Others`
 
 But seriously I don't know much about desktop visual design.
@@ -159,10 +161,10 @@ Wait, I don't know how to make a game. Why am I talking about game engines?
 
 ### Hardware
 
-I'm tired bro.
+I'm really not good at this, so tired...
 
-Oh right, no NVIDIA GPU! (just for game but not for work)
+Oh right, no NVIDIA GPU(for game)!
 
 ## 碎碎念？
 
-[Link]({{- site.url -}}{{- site.baseurl -}}/about/secret/mood-swings)
+[链接]({{- site.url -}}{{- site.baseurl -}}/about/secret/mood-swings)

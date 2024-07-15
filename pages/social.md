@@ -15,7 +15,7 @@ noindex: true
 - [GitLab](https://gitlab.com/SourLemonJuice)
 - [Docker Hub](https://hub.docker.com/u/sourlemonjuice)
 
-## 社交平台
+## 社交媒体
 
 - [Mastodon - mastodon.social](https://mastodon.social/@SourLemonJuice)
 - [Twitter/X](https://x.com/LemonJuice3893)
