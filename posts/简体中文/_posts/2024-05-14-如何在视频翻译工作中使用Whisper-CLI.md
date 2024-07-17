@@ -1,6 +1,7 @@
 ---
 title: "如何在视频翻译工作中使用 Whisper CLI"
 tags: ["OpenAI", "Machine-Learning", "CLI/TUI", "Utilities"]
+has_modified: true
 ---
 
 因为想去烤烤肉（翻译视频）所以又去看了看 whisper 的命令行界面的用法

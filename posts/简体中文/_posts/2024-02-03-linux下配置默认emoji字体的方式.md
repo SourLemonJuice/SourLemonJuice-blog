@@ -1,4 +1,7 @@
-# linux下配置默认emoji字体
+---
+title: "Linux 下配置默认 emoji 字体"
+has_modified: true
+---
 
 ## 1.正常情况下配置字体的方式
 

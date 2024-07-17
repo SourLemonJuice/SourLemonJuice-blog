@@ -1,5 +1,6 @@
 ---
 title: "Ncurses 库中不调用 refresh() 也会显示打印内容的原因"
+has_modified: true
 ---
 
 在 [tldp的文档](https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/helloworld.html) 中说道，refresh 会刷新 printw 的内容从缓冲区到真正的终端屏幕。\

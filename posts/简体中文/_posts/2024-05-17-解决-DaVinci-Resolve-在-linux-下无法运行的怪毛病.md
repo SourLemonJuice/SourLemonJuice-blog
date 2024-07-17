@@ -1,6 +1,7 @@
 ---
 title: "解决 DaVinci Resolve 在 linux 下无法运行的怪毛病"
 tags: ["DaVinci-Resolve", "Bug-Fix", "Utilities", "Linux", "PC-Desktop"]
+has_modified: true
 ---
 
 在尝试启动达芬奇但无法执行后需要 debug 的第一件事就是用终端启动它的可执行文件看看报错是什么。\

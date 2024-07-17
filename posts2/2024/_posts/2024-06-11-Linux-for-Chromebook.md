@@ -1,5 +1,6 @@
 ---
 title: "在 Chromebook 上安装完整 Linux 发行版的方法总结"
+has_modified: true
 ---
 
 ## 一、关于 Chromebook 与 ChromeOS
