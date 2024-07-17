@@ -2,7 +2,7 @@
 
 ## 1.部署方式
 
-### 1.old Github-Pages
+### 1.Github-Pages
 
 使用它的一般都是只有不完整的 jekyll 配置文件以及实际帖子内容组成的仓库\
 但这也并不意味着有完整配置文件的仓库就不能用这种方式部署了
@@ -25,9 +25,11 @@
 
 ### 2.从 Docker-Compose 启动
 
-仓库支持 Docker compose 可以用`docker compose up ~ServiceName~`启动镜像，注意不要使用没有参数的`up`子命令让服务全部启动，它们不是一整套的\
-第一次启动需要`--build`参数或者`docker compose build ~ServiceName~`来构建镜像\
-与博客本身相关的镜像名称为 **sourlemonjuiceblog:latest**
+仓库支持 Docker compose 可以用`docker compose up <ServiceName>`启动镜像，注意不要使用没有参数的`up`子命令让服务全部启动，它们不是一整套的。\
+第一次启动需要`--build`参数或者`docker compose build <ServiceName>`来构建镜像。\
+与博客本身相关的镜像名称为 `sourlemonjuice/sourlemonjuiceblog:latest`
+
+该镜像被已推送到了 [Docker Hub](https://hub.docker.com/r/sourlemonjuice/sourlemonjuiceblog) 但有很大概率更新不及时
 
 服务列表:
 
@@ -36,7 +38,7 @@
 - jekyll-build\
   构建网站放入 */_site/*
 
-> 提示： `docker compose up -d ~ServiceName~` 分离式启动容器（不占用终端）
+> 提示： `docker compose up -d <ServiceName>` 分离式启动容器（不占用终端）
 
 ### 2.Docker 中运行自定义命令
 

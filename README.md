@@ -1,24 +1,20 @@
 # SourLemonJuice-blog
 
-一个柠檬的个人网站储存库\
-由`jekyll`驱动
+一个柠檬的个人网站储存库。\
+由 `Jekyll` 与经修改后的 `minima` 主题驱动
 
-> 前期的测试都是通过`github workflow`测试的所以有很多force的提交和hotfix什么的，抱歉啦 Github
+分叉出的 minima 在这里: [minima-for-SourLemonJuice](https://github.com/SourLemonJuice/minima-for-SourLemonJuice)
 
----
+> 前期的测试都是通过`github workflow`测试的所以有很多force的提交和hotfix什么的，抱歉啦
 
-## 部署与测试
+## 维护文档
 
-参考: [docs/Deploy.md](docs/Deploy.md)
+所有维护或说明用的文档都放在 [docs/](docs/) 下了（很可能过时，但改动应该不会太大）\
+例如：
 
-## 配置文件风格
-
-配置文件的处理风格放在了 [docs/Config-style.md](docs/Config-style.md) 要写新配置或者 pages 的时候记得看\
-至于帖子嘛，大概率是用不到的，基本都是按照类型自动处理好了的
-
-## 页面使用的语言代码标准
-
-参考: [docs/Language-standard.md](docs/Language-standard.md)
+- [部署与测试](docs/Deploy.md)
+- [页面使用的语言代码标准](docs/Language-standard.md)
+- [yaml 配置的风格](docs/Config-style.md)
 
 ## 关于 搜索引擎优化/SEO 的注意事项
 
@@ -30,10 +26,6 @@
 - jekyll-sitemap
 - jekyll-seo-tag
 
-## 维护文档
-
-所有维护或说明用的文档都放在了 `docs/` 下
-
 ## 其他的碎碎念
 
 如果想在储存库根目录下放东西记得在 `exclude:` 里加上路径，不然网站的根目录下就也有啦
@@ -44,5 +36,4 @@
 
 ## TODO
 
-- 添加关键字和标签搜索（能用就行）
-- 整理 tags 定义，并补全部分帖子缺失的标签
+- 想到什么就加什么
