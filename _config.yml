@@ -69,8 +69,9 @@ minima:
   # 主题为 自动
   skin: auto
   # minima 主题的日期格式
-  date_format: "%F %R UTC%z"
-  date_format_no_hour: "%F UTC%z"
+  # https://zh.wikipedia.org/wiki/ISO_8601
+  date_format: "%FT%R%z"
+  date_format_no_hour: "%F"
   # 社交媒体链接
   social_links:
     # 设置Github主页链接
