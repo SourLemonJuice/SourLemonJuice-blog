@@ -106,30 +106,34 @@ Minecraft 启蒙与陪伴了我的游戏和计算机领域，算是个我该永�
 
 ### Programming Language
 
-#### Shell Script
+- Shell Script:\
+    To be exact, it's bash script.\
+    Because the Linux.
 
-To be exact, it's bash script.\
-Because the Linux.
+- C Language:\
+    Learning.\
+    But I should have learned a lot already.
 
-#### C Language
+- C++:\
+    Just starting to learn.
 
-Learning。\
-But I should have learned a lot already.
+- Java:\
+    Learned a **little** before.\
+    I was thinking for writing mods for Minecraft at the time.\
+    But... I didn't work it out.
 
-#### C++
+- Todo:
+  - Javascript/Typescript
+  - Python
 
-Just starting to learn.
+### Code Style
 
-#### Java
-
-Learned a **little** before.\
-I was thinking for writing mods for Minecraft at the time.\
-But... I didn't work it out.
-
-#### Todo to learn
-
-- Javascript/Typescript/Web
-- Python
+- C/C++
+  - [.clang-format](https://gist.github.com/SourLemonJuice/047f051f2d6365aed547826d22b2a516)
+  - [Linux kernel coding style](https://www.kernel.org/doc/html/latest/process/coding-style.html) no naming
+  - [Google C++ Style Guide #Naming](https://google.github.io/styleguide/cppguide.html#Naming) and some other little stuff
+  - [LLVM Coding Standards #The High-Level Issues](https://llvm.org/docs/CodingStandards.html#the-high-level-issues)
+  - Still exploring, probably
 
 ### Operating System
 
