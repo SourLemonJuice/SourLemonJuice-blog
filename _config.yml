@@ -108,7 +108,7 @@ defaults:
     values:
       layout: page
       # 抱歉，请仔细看这里: https://jekyllrb.com/docs/permalinks/#pages
-      permalink: "/:path/:basename"
+      # permalink: "/:path/:basename"
       creative_commons:
         ShortName: CC BY 4.0
         URL: "https://creativecommons.org/licenses/by/4.0/"
@@ -119,7 +119,7 @@ defaults:
       type: pages
     values:
       layout: page
-      permalink: "/about/secret/:basename"
+      # permalink: "/about/secret/:basename"
       noindex: true
       creative_commons:
         ShortName: CC BY-ND 4.0

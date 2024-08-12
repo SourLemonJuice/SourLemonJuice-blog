@@ -1,5 +1,7 @@
 ---
+permalink: "/about/secret/mood-swings"
 lang: "zho-Hans"
+noindex: true
 ---
 
 # 碎碎念（孤独的自言自语）
