@@ -10,3 +10,7 @@ gem "jekyll-feed"
 gem "jekyll-sitemap"
 gem "jekyll-seo-tag"
 gem "jekyll-last-modified-at"
+
+gem "json", "~> 2.7"
+
+gem "erb", "~> 4.0"
