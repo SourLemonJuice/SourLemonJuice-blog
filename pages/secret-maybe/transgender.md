@@ -1,5 +1,5 @@
 ---
-permalink: "/about/secret/transfeminine"
+permalink: "/about/secret/transgender"
 lang: "zho-Hans"
 sitemap: flase
 noindex: true
