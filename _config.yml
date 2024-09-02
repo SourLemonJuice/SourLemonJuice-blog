@@ -29,7 +29,7 @@ lang: eng
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description:
-  A blog of 酸柠檬猹/SourLemonJuice. Trying to be a gentle and understanding person.
+  A blog of 酸柠檬猹/SourLemonJuice. Trying to be a gentle and understanding person
 
 # 作者元数据
 author:
