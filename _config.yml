@@ -80,13 +80,9 @@ minima:
       user_url: "https://github.com/SourLemonJuice"
       title:  GitHub Profile
     -
-      platform: gitlab
-      user_url: "https://gitlab.com/SourLemonJuice"
-      title: GitLab Profile
-    -
       platform: mastodon
       user_url: "https://mastodon.social/@SourLemonJuice"
-      title: mastodon.social
+      title: Mastodon.social
     -
       platform: x
       user_url: "https://x.com/LemonJuice3893"
