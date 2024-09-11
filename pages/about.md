@@ -14,17 +14,17 @@ title: "关于"
 
 ## 作为一个人类个体其内心的一些特点
 
-这应该算社恐吗？缺些关爱吧。\
+社交上的事情真的蛮奇怪啦․․․\
 陌生人多的时候由于情绪测绘功能的过载，可能会显得有些 害羞/自我怀疑/甚至一些...极端情绪。嘛，心情很好时除外。
 
-- 会认真的感受他人来决定自己的态度
-- 陌生人多的话冷场会死掉的
+- 会认真的感受他人来决定自己的态度。至少，大多时候？
 - 实时语言组织能力可能是有点差的说․․․
-- 应该很希望有个温柔的家伙陪吧，或者一起哔哔叨些怪问题什么的，不过我的共同语言可能不会很多就是了
-- 占有欲有点强？我不知道。
-- 长时间的交流是多方性格组成的的艺术品哦
+- 应该很希望有个温柔的家伙陪吧，不过我的共同语言可能不会很多就是了
+- 陌生人多的话冷场会死掉的
+- 可以给这个家伙加上任何阴暗的标签。嘛․․․
+- 占有欲有点强？我不知道
 
-非常在乎现实世界与常规网络中的个人隐私，还请不要触犯我的底线哦。其他信息可以看 GitHub。\
+有在关心现实世界与常规网络中的个人隐私哦。其他信息和链接放在了 GitHub 主页上。\
 总之喜欢懂礼貌的家伙
 
 其实，我几乎所有公开社交账号里都不会单独写一份介绍，而是放一个指向 GitHub 的链接。\
@@ -51,11 +51,11 @@ I'm learning English? But not great at spelling and speaking in real time.
 
 ## 用户名
 
-通常使用`酸柠檬猹`作为主要用户名，但对于只接受 ASCII 字符的场景会使用`SourLemonJuice`。\
+通常使用`酸柠檬猹`作为主要用户名，但对于只接受 ASCII 字符的场景会使用`SourLemonJuice`/`sourlemonjuice`，比如 Docker Hub。\
 话虽如此，但仍有些地方随意使用了`SourLemonJuice`而非中文名，可能是因为装酷或是担心这个中文名以后会变之类的吧
 
 - 酸柠檬猹 与 SourLemonJuice 之间并没有**翻译**关系，它们的历史背景并不完全相同
-- SourLemonJuice 的每个单词之间没有空格，并且如果允许的话大写所有单词首字母
+- SourLemonJuice 的每个单词之间没有空格，并且如果允许的话大写所有单词首字母。要的就是标准的驼峰命名法嘛，超酷
 
 ## 想不到怎么描述乱写的一个章节
 
@@ -95,12 +95,12 @@ Minecraft 启蒙与陪伴了我的游戏和计算机领域，算是个我该永�
 嗯，还有什么呢，啊哈
 
 不太忠诚的蜂群(swarm)，也就是 [Neuro-Sama](https://www.twitch.tv/vedal987) 的粉丝。\
-不过龟龟(Vedal987)也挺好玩的不是吗
+不过龟龟(Vedal)也挺好玩的不是吗
 
 另外，最重要的是\
 我已经完全爱上[沃玛/Warma](https://zh.moegirl.org.cn/zh-hans/Warma)啦。\
-沃玛也算是第一个给我温暖和爱意的人了呀，我怎么会不感激呢。\
-人家花大半天时间拉回来的你可要好好生活哦。
+沃玛也算是第一个在黑暗中给我温暖和爱意的人了呀，我怎么会不感激呢。\
+人家花大半天时间拉回来的你可要好好生活哦
 
 ## Computer Science
 
@@ -144,10 +144,18 @@ Minecraft 启蒙与陪伴了我的游戏和计算机领域，算是个我该永�
 
 ### GUI Visual Design
 
-- `Material Design(3)` forever!
-- And some `Others`
+- **Material Design 3/Material You** forever!
+- **Microsoft Design Language/Microsoft Metro** is also good, I still like straight corners a bit more.
+- And some Others
 
-But seriously I don't know much about desktop visual design.
+### Linux Distribution
+
+My first distro is Ubuntu, that's the end of 2022(probably around this?), like almost anyone, it's difficult. I'm using the desktop version but use it as a server. It's just because I have an idle old computer.\
+It's funny, but it's useless as a server
+
+Nearly more than six months later, I started to try to use Linux as my main system, and that's when I chose Debian.\
+It was the right choice and I spent another six months or so learning computer on Debian, it's really really stable.\
+Finally, in 2023/08 I spent a whole night migrating them to Archlinux, until now.
 
 ### IDE(Integrated development environment)
 
@@ -158,10 +166,8 @@ Really long name...
 
 ### Game Engine
 
-- Fuck You Unity Engine
-- But who do I love?
-
-Wait, I don't know how to make a game. Why am I talking about game engines?
+Wait, I don't know how to make a game. Why am I talking about game engines?\
+I just want to say: Fuck you Unity.
 
 ### Hardware
 
@@ -171,4 +177,4 @@ Oh right, no NVIDIA GPU(for game)!
 
 ## 碎碎念？
 
-[链接]({{- site.url -}}{{- site.baseurl -}}/about/secret/mood-swings)
+[碎碎念]({{- site.url -}}{{- site.baseurl -}}/about/secret/mood-swings)
