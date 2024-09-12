@@ -135,6 +135,9 @@ Minecraft 启蒙与陪伴了我的游戏和计算机领域，算是个我该永�
   - [LLVM Coding Standards #The High-Level Issues](https://llvm.org/docs/CodingStandards.html#the-high-level-issues)
   - Still exploring, probably
 
+- Markdown
+  - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) in VSCode
+
 ### Operating System
 
 - **Half** `Linux` guy. For now it's `Archlinux`, maybe it will be `Fedora` in the future.

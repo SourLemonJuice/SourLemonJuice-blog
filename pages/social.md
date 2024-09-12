@@ -21,7 +21,6 @@ noindex: true
 
 - [Mastodon - mastodon.social](https://mastodon.social/@SourLemonJuice)
 - [Twitter/X](https://x.com/LemonJuice3893)
-- [Matrix - matrix.org](https://matrix.to/#/@sourlemonjuice:matrix.org)
 - [VRChat](https://vrchat.com/home/user/usr_17d2f8db-b256-448d-8405-b62b860025c5)
 - [Discord(fake)](https://youtu.be/dQw4w9WgXcQ)
 - [YouTube(fake)](https://www.bilibili.com/video/BV1GJ411x7h7)

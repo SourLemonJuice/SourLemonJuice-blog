@@ -88,6 +88,11 @@ minima:
       user_url: "https://x.com/LemonJuice3893"
       title: Twitter/X
 
+  contacts:
+    -
+      text: "@sourlemonjuice:matrix.org"
+      url: "https://matrix.to/#/@sourlemonjuice:matrix.org"
+
 # minima 顶部的连接
 header_pages:
   - "pages/about.md"
