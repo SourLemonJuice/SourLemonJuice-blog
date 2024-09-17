@@ -5,12 +5,17 @@ title: "关于"
 ---
 
 ```c
-#include "github/profile.h"
+#include "GitHub/profile.h"
+// 翻译成人话就是：去看看 GitHub 主页
 ```
 
 一些关于 酸柠檬猹/SourLemonJuice 的事情，虽说也不怎么全但比没有强
 
 中国大陆 - 她/它/他/祂
+
+其实，我几乎所有公开社交账号里都不会单独写一份介绍，而是放一个指向 GitHub 的链接。\
+一是方便些而且 GitHub 的主页可以写不限量的 Markdown 诶，没什么其他平台能做到了。\
+二是这样所有要看我成分的人必然会先经过 GitHub，这样对于不懂技术的人来说可以先吓唬一下啦
 
 ## 作为一个人类个体其内心的一些特点
 
@@ -27,10 +32,6 @@ title: "关于"
 有在关心现实世界与常规网络中的个人隐私哦。其他信息和链接放在了 GitHub 主页上。\
 总之喜欢懂礼貌的家伙
 
-其实，我几乎所有公开社交账号里都不会单独写一份介绍，而是放一个指向 GitHub 的链接。\
-一是方便些而且 GitHub 的主页可以写不限量的 Markdown 诶，没什么其他平台能做到了。\
-二是这样所有要看我成分的人必然会先经过 GitHub，这样对于不懂技术的人来说可以先吓唬一下啦
-
 ### MBTI 人格
 
 我对这种东西的可靠性必然是存疑的，至少这五种属性不是二元的呀，这也是为什么我想把完整的百分比放出来。\
@@ -45,10 +46,6 @@ title: "关于"
 虚拟现实中的社交剥离了许多现实中获取信息的方式，这让流畅的沟通更加困难，另一方面上也能不同幅度的降低人与人之间的歧视，偏见与刻板印象。\
 我到也是更喜欢了解别人的性格本身，而非它在现实世界中的各种属性与标签
 
-## 非母语语言
-
-I'm learning English? But not great at spelling and speaking in real time.
-
 ## 用户名
 
 通常使用`酸柠檬猹`作为主要用户名，但对于只接受 ASCII 字符的场景会使用`SourLemonJuice`/`sourlemonjuice`，比如 Docker Hub。\
@@ -62,8 +59,8 @@ I'm learning English? But not great at spelling and speaking in real time.
 - 计算机方面的东西我都是来者不拒的哦
 - 其实不怎么喜欢玩电子游戏的
 - VR 玩家，也是不狂热的爱好者。想试试动作追踪方面的东西，做过 SlimeVR
-- 毛绒玩具最棒啦（但完全不是 furry）
-- 好像要一个正经的头像... 我不会美术呀www
+- 毛绒玩具最棒啦（但**完全**不是 furry）
+- 想要一个正经的头像... 我不会美术呀www
 - 打字时不喜欢加句号和常见的句尾符号，也可能是写的东西成段的少。总之我超爱换行符的，而且中文的情绪表达确实不依赖句尾标点
 - 大概只有书籍才能体现语言系统本身的魅力吧，但我也不常看啦
 
@@ -80,16 +77,23 @@ Minecraft 启蒙与陪伴了我的游戏和计算机领域，算是个我该永�
 另外，如果游戏玩法（物理上）很新奇的话，我会对它**极其**感兴趣的哦，比如:\
 《斯普拉遁3》《Nintendo Switch 运动》《半衰期：爱莉克斯》《UNDERDOGS》
 
+《Sky 光·遇》让只玩过主流手游的我第一次认识到了“游戏”的魅力。直到现在它的渲染系统和动作系统依旧是我心目中的标杆。\
+虽说对于盈利方式来讲... 既觉得很恶心，又觉得有些理解，还是不提了。\
+同样也是个对我有着深刻意义的游戏呢，估计如果以后要做渲染的话，第一个想仿照的风格就会是它吧
+
+我对游戏没有什么特殊情感... 但如果作者巧妙的将他的情感表达了出来，那无论这份情感是什么应该都会很有趣吧。\
+有趣且有自己的风格，尤其是渲染风格，这大概就是我评判游戏的标准吧
+
 ## 二次元/动漫
 
-好吧，我的浓度其实不高的说但这是我看过而且喜欢的一些番剧或者电影
+好吧，我的浓度其实不高的说，但这是我看过而且喜欢的一些番剧或者电影
 
+- 孤独摇滚
+- 千与千寻
 - 某科学的超电磁炮
 - 某科学的一方通行
-- 孤独摇滚
 - 轻音少女
 - 你的名字，天气之子，铃芽之旅
-- 千与千寻
 - 我的三体
 
 嗯，还有什么呢，啊哈
@@ -106,11 +110,11 @@ Minecraft 启蒙与陪伴了我的游戏和计算机领域，算是个我该永�
 
 ### Programming Language
 
-- Shell Script:\
+- Shell script:\
     To be exact, it's bash script.\
     Because the Linux.
 
-- C Language:\
+- C language:\
     Learning.\
     But I should have learned a lot already.
 
@@ -140,21 +144,21 @@ Minecraft 启蒙与陪伴了我的游戏和计算机领域，算是个我该永�
 
 ### Operating System
 
-- **Half** `Linux` guy. For now it's `Archlinux`, maybe it will be `Fedora` in the future.
-- Microsoft `Windows`... Easy to use, but not simple. I'm never hate it.
-- Forever rejecting `macOS` and `Apple`.
-- Weird `ChromeOS`, but it's funny and useful.
+- **Half** `Linux` guy. For now it's `Archlinux`, maybe it will be `Fedora` in the future
+- Microsoft `Windows`... Easy to use, but not simple. I'm never hate it
+- Forever rejecting `macOS` and `Apple`
+- Weird `ChromeOS`, but it's funny and useful
 
 ### GUI Visual Design
 
 - **Material Design 3/Material You** forever!
-- **Microsoft Design Language/Microsoft Metro** is also good, I still like straight corners a bit more.
+- **Microsoft Design Language/Microsoft Metro** is also good, I still like straight corners a bit more
 - And some Others
 
 ### Linux Distribution
 
 My first distro is Ubuntu, that's the end of 2022(probably around this?), like almost anyone, it's difficult. I'm using the desktop version but use it as a server. It's just because I have an idle old computer.\
-It's funny, but it's useless as a server
+This is fun, but useless as a server
 
 Nearly more than six months later, I started to try to use Linux as my main system, and that's when I chose Debian.\
 It was the right choice and I spent another six months or so learning computer on Debian, it's really really stable.\
@@ -170,7 +174,7 @@ Really long name...
 ### Game Engine
 
 Wait, I don't know how to make a game. Why am I talking about game engines?\
-I just want to say: Fuck you Unity.
+I just want to say: Fuck you Unity
 
 ### Hardware
 
