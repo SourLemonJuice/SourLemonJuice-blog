@@ -1,28 +1,27 @@
 name: sourlemonjuice-blog
 
 services:
-  jekyll-server:
+  server:
     image: sourlemonjuice/sourlemonjuiceblog:latest
+    pull_policy: build
     container_name: sourlemonjuiceblog-TestServer
     command: [ "bundle", "exec", "jekyll", "server", "--host", "0.0.0.0", "--port", "4000", "--drafts" ]
-    build:
-      context: ./
-      dockerfile: ./Dockerfile
     volumes:
       - type: bind
         source: ./
-        target: /srv/blog/working-dir/
+        target: /buildroot/working/
     ports:
       - target: 4000
         host_ip: 0.0.0.0
         published: 4000
         protocol: tcp
 
-  jekyll-build:
+  build:
     image: sourlemonjuice/sourlemonjuiceblog:latest
+    pull_policy: build
     container_name: sourlemonjuiceblog-BuildSite
     command: [ "bundle", "exec", "jekyll", "build" ]
     volumes:
       - type: bind
         source: ./
-        target: /srv/blog/working-dir/
+        target: /buildroot/working/

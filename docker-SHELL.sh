@@ -9,9 +9,4 @@ else
     Command=""
 fi
 
-docker run --rm --interactive --tty \
-    --volume "./:/srv/blog/working-dir/" \
-    --publish "4000:4000" \
-    --name sourlemonjuiceblog \
-    sourlemonjuice/sourlemonjuiceblog:latest \
-    ${Command}
+docker compose run --rm server "${Command}"
