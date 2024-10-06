@@ -3,6 +3,7 @@ name: sourlemonjuice-blog
 services:
   server:
     image: sourlemonjuice/sourlemonjuiceblog:latest
+    build: ./
     pull_policy: build
     container_name: sourlemonjuiceblog-TestServer
     command: [ "bundle", "exec", "jekyll", "server", "--host", "0.0.0.0", "--port", "4000", "--drafts" ]
@@ -18,6 +19,7 @@ services:
 
   build:
     image: sourlemonjuice/sourlemonjuiceblog:latest
+    build: ./
     pull_policy: build
     container_name: sourlemonjuiceblog-BuildSite
     command: [ "bundle", "exec", "jekyll", "build" ]
