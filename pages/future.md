@@ -2,6 +2,7 @@
 permalink: "/about/future"
 lang: "zho-Hans"
 title: "在可能的未来"
+noindex: true
 ---
 
 我不是个对桌面软件特别感兴趣的人，我喜欢的一直都是技术本身，虽说我还远没有那么厉害...
