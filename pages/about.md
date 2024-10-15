@@ -110,24 +110,30 @@ Minecraft 启蒙与陪伴了我的游戏和计算机领域，算是个我该永�
 
 ### Programming Language
 
-- Shell script:\
+- Shell Script:\
     To be exact, it's bash script.\
-    Because the Linux.
+    Because the Linux
 
-- C language:\
-    Learning.\
-    But I should have learned a lot already.
+- The ISO C Programming Language:\
+    Still learning?\
+    But I should have learned a lot already
+
+- JavaScript:\
+  [SourLemonJuice/Redirect-Worker](https://github.com/SourLemonJuice/Redirect-Worker) is a CloudFlare Worker for redirecting HTTP requests, I think it has made me realize the strange syntax of JS...
 
 - C++:\
-    Just starting to learn.
+    Just starting to learn
+
+- Kotlin:\
+  Only learned a little bit, but it's interesting. It's very... comfortable?
 
 - Java:\
     Learned a **little** before.\
     I was thinking for writing mods for Minecraft at the time.\
-    But... I didn't work it out.
+    But... I didn't work it out
 
 - Todo:
-  - Javascript/Typescript
+  - TypeScript
   - Python
 
 ### Code Style
@@ -141,6 +147,9 @@ Minecraft 启蒙与陪伴了我的游戏和计算机领域，算是个我该永�
 
 - Markdown
   - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) in VSCode
+
+- JavaScript
+  - [.prettierrc.yaml](https://gist.github.com/SourLemonJuice/8f0ec285fafe9bce38dd95d9fae5c349)
 
 ### Operating System
 
@@ -162,7 +171,7 @@ This is fun, but useless as a server
 
 Nearly more than six months later, I started to try to use Linux as my main system, and that's when I chose Debian.\
 It was the right choice and I spent another six months or so learning computer on Debian, it's really really stable.\
-Finally, in 2023/08 I spent a whole night migrating them to Archlinux, until now.
+Finally, in 2023/08 I spent a whole night migrating them to Archlinux, until now
 
 ### IDE(Integrated development environment)
 
