@@ -6,7 +6,7 @@ title: "关于"
 
 ```c
 #include "GitHub/profile.h"
-// 翻译成人话就是：去看看 GitHub 主页
+// 翻译成人话就是：先去看看 GitHub 主页咯
 ```
 
 一些关于 酸柠檬猹/SourLemonJuice 的事情，虽说也不怎么全但比没有强
@@ -16,6 +16,10 @@ title: "关于"
 其实，我几乎所有公开社交账号里都不会单独写一份介绍，而是放一个指向 GitHub 的链接。\
 一是方便些而且 GitHub 的主页可以写不限量的 Markdown 诶，没什么其他平台能做到了。\
 二是这样所有要看我成分的人必然会先经过 GitHub，这样对于不懂技术的人来说可以先吓唬一下啦
+
+## 计算机科学
+
+[The Computer Science]({{- site.baseurl -}}/about/computer)
 
 ## 作为一个人类个体其内心的一些特点
 
@@ -106,91 +110,6 @@ Minecraft 启蒙与陪伴了我的游戏和计算机领域，算是个我该永�
 沃玛也算是第一个在黑暗中给我温暖和爱意的人了呀，我怎么会不感激呢。\
 人家花大半天时间拉回来的你可要好好生活哦
 
-## Computer Science
-
-### Programming Language
-
-- Shell Script:\
-    To be exact, it's bash script.\
-    Because the Linux
-
-- The ISO C Programming Language:\
-    Still learning?\
-    But I should have learned a lot already
-
-- JavaScript:\
-  [SourLemonJuice/Redirect-Worker](https://github.com/SourLemonJuice/Redirect-Worker) is a CloudFlare Worker for redirecting HTTP requests, I think it has made me realize the strange syntax of JS...
-
-- C++:\
-    Just starting to learn
-
-- Kotlin:\
-  Only learned a little bit, but it's interesting. It's very... comfortable?
-
-- Java:\
-    Learned a **little** before.\
-    I was thinking for writing mods for Minecraft at the time.\
-    But... I didn't work it out
-
-- Todo:
-  - TypeScript
-  - Python
-
-### Code Style
-
-- C/C++
-  - [.clang-format](https://gist.github.com/SourLemonJuice/047f051f2d6365aed547826d22b2a516)
-  - [Linux kernel coding style](https://www.kernel.org/doc/html/latest/process/coding-style.html) no naming
-  - [Google C++ Style Guide #Naming](https://google.github.io/styleguide/cppguide.html#Naming) and some other little stuff
-  - [LLVM Coding Standards #The High-Level Issues](https://llvm.org/docs/CodingStandards.html#the-high-level-issues)
-  - Still exploring, probably
-
-- Markdown
-  - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) in VSCode
-
-- JavaScript
-  - [.prettierrc.yaml](https://gist.github.com/SourLemonJuice/8f0ec285fafe9bce38dd95d9fae5c349)
-
-### Operating System
-
-- **Half** `Linux` guy. For now it's `Archlinux`, maybe it will be `Fedora` in the future
-- Microsoft `Windows`... Easy to use, but not simple. I'm never hate it
-- Forever rejecting `macOS` and `Apple`
-- Weird `ChromeOS`, but it's funny and useful
-
-### GUI Visual Design
-
-- **Material Design 3/Material You** forever!
-- **Microsoft Design Language/Microsoft Metro** is also good, I still like straight corners a bit more
-- And some Others
-
-### Linux Distribution
-
-My first distro is Ubuntu, that's the end of 2022(probably around this?), like almost anyone, it's difficult. I'm using the desktop version but use it as a server. It's just because I have an idle old computer.\
-This is fun, but useless as a server
-
-Nearly more than six months later, I started to try to use Linux as my main system, and that's when I chose Debian.\
-It was the right choice and I spent another six months or so learning computer on Debian, it's really really stable.\
-Finally, in 2023/08 I spent a whole night migrating them to Archlinux, until now
-
-### IDE(Integrated development environment)
-
-Really long name...
-
-- Only `Visual Studio Code`
-- Or just use `Terminal` and `TextEditor`
-
-### Game Engine
-
-Wait, I don't know how to make a game. Why am I talking about game engines?\
-I just want to say: Fuck you Unity
-
-### Hardware
-
-I'm really not good at this, so tired...
-
-Oh right, no NVIDIA GPU(for game)!
-
 ## 碎碎念？
 
-[碎碎念]({{- site.url -}}{{- site.baseurl -}}/about/secret/mood-swings)
+[碎碎念]({{- site.baseurl -}}/about/secret/mood-swings)
