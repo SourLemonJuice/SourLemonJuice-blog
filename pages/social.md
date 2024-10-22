@@ -16,13 +16,17 @@ redirect_from:
 - [GitLab](https://gitlab.com/SourLemonJuice)
 - [StackOverflow](https://stackoverflow.com/users/25416550)
 - [Docker Hub](https://hub.docker.com/u/sourlemonjuice)
+- [PyPI](https://pypi.org/user/SourLemonJuice/)
+- [Hugging Face](https://huggingface.co/SourLemonJuice)
 - [RubyGems](https://rubygems.org/profiles/SourLemonJuice)
+- [npm](https://www.npmjs.com/~sourlemonjuice)
 
 ## 社交媒体
 
 - [Mastodon - mastodon.social](https://mastodon.social/@SourLemonJuice)
 - [Twitter/X](https://x.com/LemonJuice3893)
 - [VRChat](https://vrchat.com/home/user/usr_17d2f8db-b256-448d-8405-b62b860025c5)
+- [Bluesky - bsky.app](https://bsky.app/profile/sourlemonjuice.bsky.social)
 - [YouTube(fake)](https://www.bilibili.com/video/BV1GJ411x7h7)
 
 ## Chat
