@@ -1,11 +1,7 @@
-# minima theme
 # theme: minima
-# 强制使用最新的minima远程仓库
 remote_theme: https://github.com/SourLemonJuice/minima-for-SourLemonJuice
 
-# 网站标题
 title: SourLemonJuice-blog
-# 域名
 url: "https://sourlemonjuice.github.io"
 # 域名后，页面url前，的基本url
 baseurl: "/SourLemonJuice-blog"
@@ -26,26 +22,20 @@ timezone: Asia/Shanghai
 lang: eng
 
 # 网站页脚描述
-# The `>` after `description:` means to ignore line-breaks until next key.
-# If you want to omit the line-break after the end of text, use `>-` instead.
 description:
-  A blog of 酸柠檬猹/SourLemonJuice. Trying to be a gentle and understanding person
+  A blog of 酸柠檬猹/SourLemonJuice. Trying to be a gentle and understanding person.
 
-# 作者元数据
 author:
   name: "酸柠檬猹/SourLemonJuice"
   email: "SourLemonJuice233@outlook.com"
 
 # jekyll 插件设置
 plugins:
-  # 远程主题支持
   - jekyll-remote-theme
-  # 生成 atom feed
   - jekyll-feed
   # 生成 seo(Search engine optimization)/搜索引擎优化 标签
   # 注意: minima 主题的 _includes/head.html 中已经添加了 {% seo %}
   - jekyll-seo-tag
-  # 获取最后修改日期
   - jekyll-last-modified-at
   - jekyll-redirect-from
   # 生成 sitemap/站点地图
@@ -60,10 +50,11 @@ webmaster_verifications:
   bing: BC0CFA01D203CF6FDE0923D19DA3EFEE
 
 # Some analytics tools added with me
-# Google Analytics
-google_analytics: true
-# Microsoft Clarity
-microsoft_clarity: true
+analytics:
+  # Google Analytics
+  google_analytics: true
+  # Microsoft Clarity
+  microsoft_clarity: true
 
 # 设置 minima
 minima:
