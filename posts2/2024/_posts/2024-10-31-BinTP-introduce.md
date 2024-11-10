@@ -99,8 +99,23 @@ fields 是一套固定格式的循环。这是单个结构的格式：
 其中，请求方法是大小为 8bit 的二进制格式
 
 ```text
-| uint8 修订号 | URI | 标头字段 ... | 负载 |
+| uint8 修订号 | uint8 方法 | URI | 标头字段 ... | 负载 |
 ```
+
+随机生成的方法对照：
+
+|HTTP|BinTP|
+|:--|:--|
+|GET|0xa9|
+|HEAD|0xd3|
+|POST|0x11|
+|PUT|0xa0|
+|DELETE|0x80|
+|CONNECT|0x6f|
+|OPTIONS|0x83|
+|TRACE|0x0d|
+
+> <https://www.rfc-editor.org/rfc/rfc9110.html#section-9>
 
 ## 响应格式
 
@@ -108,8 +123,12 @@ fields 是一套固定格式的循环。这是单个结构的格式：
 随后则是与请求格式一样的标头字段：
 
 ```text
-| uint8 修订号 | uint8 status | 标头字段 ... | 负载 |
+| uint8 修订号 | uint16 status | 标头字段 ... | 负载 |
 ```
+
+status 直接使用 HTTP 状态码章节的描述
+
+> <https://www.rfc-editor.org/rfc/rfc9110.html#section-15>
 
 ## 还需要想的事情
 
