@@ -89,7 +89,7 @@ minima:
 header_pages:
   - "pages/about.md"
   - "pages/future.md"
-  - "pages/social.md"
+  - "pages/contact.md"
   - "pages/archive.html"
 
 # 设置默认 Front-Matter

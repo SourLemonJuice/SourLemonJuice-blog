@@ -12,6 +12,8 @@ redirect_from:
 
 ## 对人类有用的东西
 
+> 这里除了 GitHub 好像基本都是空的...
+
 - [GitHub](https://github.com/SourLemonJuice)
 - [GitLab](https://gitlab.com/SourLemonJuice)
 - [StackOverflow](https://stackoverflow.com/users/25416550)
@@ -29,12 +31,16 @@ redirect_from:
 - [Bluesky - bsky.app](https://bsky.app/profile/sourlemonjuice.bsky.social)
 - [YouTube(fake)](https://www.bilibili.com/video/BV1GJ411x7h7)
 
-## Chat
+## 说说话
 
-想了半天写什么标题语气上比较合适。嘛，反正 chat 的意思蛮广的
+老实说，把聊天软件的账号放出来大概都是有自己的原因的对吧。或是为了生意，或是希望在网络中发现自己后还对自己有兴趣的人能方便的找到自己甚至成为朋友。\
+我不知道，这毕竟是完全公开的互联网...
 
-- Twitter/X 好像有私信来着的
-- 网页页脚有写 Email 和 Matrix
+对于这个家伙的话，私信在 Twitter/X 和页脚的 Matrix 上。\
+当然页脚上的邮件什么的也未尝不可呢
+
+嘛，来开些玩笑吧：
+
 - [Discord(fake)](https://youtu.be/dQw4w9WgXcQ)
 - [腾讯QQ(fake)](https://open.spotify.com/track/4PTG3Z6ehGkBFwjybzWkR8)
 - [微信(fake)](https://en.wikipedia.org/wiki/Never_Gonna_Give_You_Up)
