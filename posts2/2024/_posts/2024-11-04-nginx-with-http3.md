@@ -1,5 +1,6 @@
 ---
 title: "在 NGINX Docker 上启用 HTTP/3 的经历"
+has_modified: true
 ---
 
 HTTP3 是最新一代的 HTTP 协议，最近在折腾自己的网站加上一直久仰它的大名，所以就像看看能不能给自己的网站塞上
@@ -59,6 +60,20 @@ ports:
 ```
 
 记得一定要看防火墙呀
+
+## 使用多个虚拟主机（子域）时报错无法绑定端口
+
+报错信息可能类似这样：
+
+```text
+duplicate listen options xxx:443
+```
+
+参见这篇帖子：<https://github.com/cloudflare/quiche/issues/236#issuecomment-548042467>\
+和这里：<https://stackoverflow.com/a/77005737/25416550>
+
+只写一次 reuseport 就好了，其它的主机只需要 `listen 443 quic;`...\
+nginx 有时还是太底层了的说
 
 ## 还可以看看这些
 
