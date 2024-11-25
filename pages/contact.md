@@ -26,7 +26,7 @@ redirect_from:
 ## 社交媒体
 
 - [Mastodon - mastodon.social](https://mastodon.social/@SourLemonJuice)
-- [Twitter/X](https://x.com/LemonJuice3893)
+- [Twitter/X](https://x.com/0x534c4a)
 - [VRChat](https://vrchat.com/home/user/usr_17d2f8db-b256-448d-8405-b62b860025c5)
 - [Bluesky - bsky.app](https://bsky.app/profile/sourlemonjuice.bsky.social)
 - [YouTube(fake)](https://www.bilibili.com/video/BV1GJ411x7h7)
@@ -34,12 +34,11 @@ redirect_from:
 ## 说说话
 
 老实说，把聊天软件的账号放出来大概都是有自己的原因的对吧。或是为了生意，或是希望在网络中发现自己后还对自己有兴趣的人能方便的找到自己甚至成为朋友。\
-我不知道，这毕竟是完全公开的互联网...
+但这毕竟是完全公开的互联网... 最不缺乏的就是那些居心叵测的人
 
-对于这个家伙的话，私信在 Twitter/X 和页脚的 Matrix 上。\
-当然页脚上的邮件什么的也未尝不可呢
+总之，Matrix 和邮箱写在页脚，Twitter/X 等社交媒体的私信也未尝不可。如果真的有事的话，随时欢迎哦
 
-嘛，来开些玩笑吧：
+来，开些玩笑吧：
 
 - [Discord(fake)](https://youtu.be/dQw4w9WgXcQ)
 - [腾讯QQ(fake)](https://open.spotify.com/track/4PTG3Z6ehGkBFwjybzWkR8)
