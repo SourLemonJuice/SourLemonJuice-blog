@@ -1,6 +1,7 @@
 ---
 title: "由于 GitHub Pages 自定义域缺乏验证进而可能导致的攻击"
 date: 2024-12-12 00:00 +0800
+has_modified: true
 ---
 
 GitHub Pages 一直拥有将部署的网站使用自定义域的能力：[配置 GitHub Pages 站点的自定义域](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site)。\
@@ -26,8 +27,42 @@ GitHub 并不是那么愚蠢，在用户设置下的 Pages 选项卡有着一个
 此处的验证需要在 APEX 域下添加一个特殊且随机的 TXT 类型 DNS 记录，相比与只需要添加单一的指向 GitHub Pages 服务器的 CNAME 记录，这可以明显的阻止未经认可的域名验证。\
 即使如此，如果其他用户在验证 APEX 域之前就已经将子域验证，那所有者也无法验证此前被其他用户占有的子域
 
+## 攻击演示
+
+假设现在有一个原始仓库部署在 `x23w8o0xodjf.hidden.sourlemonjuice.net` 上：
+
+![原始仓库]({{ site.baseurl }}/static/asset/2024-12-12-github-pages-attack/image/original-repo.png)
+
+还有一个攻击者的仓库：
+
+![攻击者仓库]({{ site.baseurl }}/static/asset/2024-12-12-github-pages-attack/image/attacker-repo.png)
+
+如果在没有验证 `sourlemonjuice.net` 域的前提下删除了这一自定义域同时也没有删除对应的 DNS 记录（哪怕是指向 `github.github.io` 的 CNAME），这一域名则可能在没有任何提醒的情况下被恶意使用：
+
+![攻击成功]({{ site.baseurl }}/static/asset/2024-12-12-github-pages-attack/image/attack-success.png)
+
+这是即使拥有域名的完全所有权也不能直接的将被夺取的域抢回：
+
+![抢回时报错]({{ site.baseurl }}/static/asset/2024-12-12-github-pages-attack/image/cannot-taken-back.png)
+
+如果先前已经认证过域名，那么任何人都不能发起这种形式的攻击：
+
+![已认证的域是安全的]({{ site.baseurl }}/static/asset/2024-12-12-github-pages-attack/image/verified-domains-are-safe.png)
+
+## 呃~
+
+我只是不明白，为什么这里的弹窗的样式有问题...
+
+![叉叉图标被换行啦]({{ site.baseurl }}/static/asset/2024-12-12-github-pages-attack/image/github-ui-when-successfully-verified.png)
+
 ## 可能的改进方式
 
 呃，直接让用户强制在用户设置下验证域不就好了（？）
 
 那 GitHub 为什么只是在输入框下面放了个指向文档的链接呢（盯）
+
+## 发现者
+
+Cyan: [GitHub](https://github.com/CyanChanges) & [Website](https://www.cyans.me/)
+
+是他发现的哦，我只是跑去搞测试（
