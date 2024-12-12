@@ -38,6 +38,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-last-modified-at
   - jekyll-redirect-from
+  - jekyll-minifier
   # 生成 sitemap/站点地图
   # 注意: "网站地图" 需要在其他 "有生成文件功能" 的插件执行后生成
   # 默认情况下最后被需求的插件会被最后执行，所以一定要保持这行配置是插件序列中的最后一项

@@ -16,3 +16,5 @@ gem "json", "~> 2.7"
 gem "erb", "~> 4.0"
 
 gem "jekyll-redirect-from", "~> 0.16.0"
+
+gem 'jekyll-minifier', '~> 0.1.10'
