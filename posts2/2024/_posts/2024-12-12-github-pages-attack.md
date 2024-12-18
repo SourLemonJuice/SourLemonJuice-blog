@@ -1,7 +1,7 @@
 ---
 title: "由于 GitHub Pages 自定义域缺乏验证进而可能导致的攻击"
 date: 2024-12-12 00:00 +0800
-has_modified: true
+mdate: 2024-12-18 20:16 +0800
 ---
 
 GitHub Pages 一直拥有将部署的网站使用自定义域的能力：[配置 GitHub Pages 站点的自定义域](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site)。\
@@ -48,6 +48,9 @@ GitHub 并不是那么愚蠢，在用户设置下的 Pages 选项卡有着一个
 如果先前已经认证过域名，那么任何人都不能发起这种形式的攻击：
 
 ![已认证的域是安全的]({{ site.baseurl }}/static/asset/2024-12-12-github-pages-attack/image/verified-domains-are-safe.png)
+
+> 更新 2024-12-14：\
+> 新的测试中，认证的 APEX 域也无法保护其子域不被其他用户验证
 
 ## 呃~
 
