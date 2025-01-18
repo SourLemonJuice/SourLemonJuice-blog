@@ -1,9 +1,9 @@
 ---
 permalink: "/about/contact"
+redirect_from:
+  - "/about/social"
 lang: "zho-Hans"
 title: "网络账号"
-redirect_from:
-  - /about/social
 ---
 
 不要问为什么不完全用 Jekyll 主题自带的，minima 主题上需要自定义一个特殊处理过的 svg 图标... 有点懒
