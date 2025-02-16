@@ -23,9 +23,4 @@ redirect_from:
 
 ### Microsoft Clarity
 
-本网站使用 Microsoft Clarity 作为行为分析工具来分析用户在浏览网页时的实时动态，以改进网站样式与布局。\
-您的数据受 Microsoft 保护，不会被出售给其他第三方实体。由于使用率的低下，我们也在考虑是否停用这一工具
-
-详情请参阅：
-
-- [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
+在 2025-02-16 +0800 以前，本网站使用 Microsoft Clarity 收集匿名的用户视角信息，但由于对其用处与隐私方面的考量，在此之后将不会使用该服务，此前的数据也已被删除
