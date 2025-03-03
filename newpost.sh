@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+if [[ "$1" == "--help" ]]; then
+    cat <<EOF
+Usage: newpost.sh [--help] [<post_id>]
+
+If post_id not specified, use "post" as it by default.
+EOF
+    exit
+fi
+
 if [[ ! -f "./_config.yml" ]]; then
     echo "This script needs to be run from the repository root"
     exit
