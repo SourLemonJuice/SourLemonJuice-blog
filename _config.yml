@@ -65,36 +65,31 @@ minima:
   date_format_no_hour: "%F"
   # 社交媒体链接
   social_links:
-    -
-      platform: github
-      user_url: "https://github.com/SourLemonJuice"
-      title:  GitHub Profile
-    -
-      platform: mastodon
-      user_url: "https://mastodon.social/@SourLemonJuice"
-      title: Mastodon.social
-    -
-      platform: x
-      user_url: "https://x.com/LemonJuice3893"
-      title: Twitter/X
+    - title: GitHub Profile
+      icon: github
+      url: "https://github.com/SourLemonJuice"
+    - title: Mastodon.social
+      icon: mastodon
+      url: "https://mastodon.social/@SourLemonJuice"
+    - title: Twitter/X
+      icon: x-twitter
+      url: "https://x.com/LemonJuice3893"
 
   contacts:
-    -
-      text: "@sourlemonjuice:matrix.org"
+    - text: "@sourlemonjuice:matrix.org"
       url: "https://matrix.to/#/@sourlemonjuice:matrix.org"
 
-# minima 顶部的连接
-header_pages:
-  - "pages/about.md"
-  - "pages/future.md"
-  - "pages/contact.md"
-  - "pages/archive.html"
+  # minima 顶部的连接
+  nav_pages:
+    - "pages/about.md"
+    - "pages/future.md"
+    - "pages/contact.md"
+    - "pages/archive.html"
 
 # 设置默认 Front-Matter
 defaults:
   # all the pages(not posts)
-  -
-    scope:
+  - scope:
       path: "pages/"
       type: pages
     values:
@@ -104,8 +99,7 @@ defaults:
       creative_commons:
         ShortName: CC BY 4.0
         URL: "https://creativecommons.org/licenses/by/4.0/"
-  -
-    # For private pages...
+  - # For private pages...
     scope:
       path: "pages/secret-maybe/"
       type: pages
@@ -117,8 +111,7 @@ defaults:
         ShortName: CC BY-ND 4.0
         URL: "https://creativecommons.org/licenses/by-nd/4.0/"
   # posts v1
-  -
-    scope:
+  - scope:
       path: "posts/"
       type: posts
     values:
@@ -131,16 +124,14 @@ defaults:
         URL: "https://creativecommons.org/licenses/by/4.0/"
   # 配置语言信息
   # 注意: 记得给 "pages" 单独写标签，它们还是单独管理的好(有些页面本身也不是中文2333)
-  -
-    scope:
+  - scope:
       path: "posts/简体中文/"
       type: posts
     values:
       lang: zho-Hans
   # posts v2
   # 主旨大概就是弱化时间和语言概念吧，大概
-  -
-    scope:
+  - scope:
       path: "posts2/"
       type: posts
     values:
