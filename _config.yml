@@ -63,6 +63,7 @@ minima:
   # https://zh.wikipedia.org/wiki/ISO_8601
   date_format: "%FT%R%z"
   date_format_no_hour: "%F"
+  privacy_dialog: true
   # 社交媒体链接
   social_links:
     - title: GitHub Profile
