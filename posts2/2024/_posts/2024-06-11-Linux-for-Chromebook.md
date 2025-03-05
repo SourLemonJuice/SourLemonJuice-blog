@@ -1,11 +1,11 @@
 ---
 title: "在 Chromebook 上安装完整 Linux 发行版的方法总结"
-has_modified: true
+mdate: 2025-03-05 08:44 +0800
 ---
 
 ## 一、关于 Chromebook 与 ChromeOS
 
-Chromebook 本身是 Google 为了教育和轻度电脑使用者准备的纯“上网本”，我对它其实不太可能产生什么兴趣，但 Pixelbook Go 实在是太好看了哇，而且二手价还超级便宜（500多人民币？）\
+Chromebook 本身是 Google 为了教育和轻度电脑使用者准备的纯“上网本”，我对它其实不太可能产生什么兴趣，但 Pixelbook Go 实在是太好看了哇，而且二手价还超级便宜（900多人民币？）\
 至于这篇文章，大概会讲一些 Chromebook 的安全特性和安装标准 linux 发行版可能会遇到的问题吧。\
 希望不会跑题太多（？
 
@@ -128,12 +128,12 @@ ChromiumOS 的文档在这里: [AltFw](https://www.chromium.org/chromium-os/deve
 
 这里有个超棒的项目: [WeirdTreeThing/chromebook-linux-audio](https://github.com/WeirdTreeThing/chromebook-linux-audio)
 
-### 2.键盘映射
+### 2.Assistant 键映射
 
 或许 [fascinatingcaptain/CBFixesAndTweaks](https://github.com/fascinatingcaptain/CBFixesAndTweaks)\
 或者 [How do I setup a keyboard mapping compatible with a Chromebook?](https://askubuntu.com/questions/566060/how-do-i-setup-a-keyboard-mapping-compatible-with-a-chromebook)
 
-不过有些问题，Chromebook 上独有的 Assistant 按键在 [xmodmap](https://wiki.archlinux.org/title/xmodmap) 里是识别不到的，可以参考下这里: [crouton:issue#3505](https://github.com/dnschneid/crouton/issues/3505)
+先抛开 xmodmap 在 wayland 下被弃用的问题。先来说说 Chromebook 上独有的 Assistant 按键在 [xmodmap](https://wiki.archlinux.org/title/xmodmap) 里是识别不到的，可以参考下这里: [crouton:issue#3505](https://github.com/dnschneid/crouton/issues/3505)
 
 所以我们需要些更底层的方式将 Assistant 按键键值映射到其他的值上，也就是直接给 input event 开刀。\
 这方面上 Archwiki 里已经有了相对详细的说明: [Map scancodes to keycodes](https://wiki.archlinux.org/title/Map_scancodes_to_keycodes)\
@@ -147,21 +147,30 @@ ChromiumOS 的文档在这里: [AltFw](https://www.chromium.org/chromium-os/deve
 而最终目标则是将**某个**特定键盘，或**某些**类型的键盘的 Assistant 转换成类似 Meta 的按键。\
 实现映射功能的是 systemd-hwdb，它的配置文件允许匹配
 
-- `input:` 开头的映射块名称，类似\
-  evdev:input:b0003v32ACp0012e0111-*
-- `模块名:dmi:...` 开头的 DMI 表示符，类似\
-  evdev:atkbd:dmi:*
+- `evdev:input:` 开头的映射块名称，类似：`evdev:input:b0003v32ACp0012e0111-*`
+- `evdev:<模块名>:dmi:...` 开头的 DMI 表示符，类似：`evdev:atkbd:dmi:*`
+
+此处需要的配置文件类似长这样：
+
+```text
+evdev:atkbd:dmi:bvn*:bvr*:bd*:svnGoogle:pnAtlas:pvr*
+ KEYBOARD_KEY_d8=leftmeta
+```
 
 #### 2.1.匹配事件映射块
 
-配置文件中可以使用的通配符在手册中有写: [HWDB(7)](https://man.archlinux.org/man/core/systemd/hwdb.7.en)\
+配置文件中可以使用的通配符在手册中有写: [HWDB(7)](https://man.archlinux.org/man/core/systemd/hwdb.7.en)
+
 要想获取 DMI 名称可以运行不带参数的 `evemu-describe`，并选择看起来像键盘的 event 设备，详细信息中应该会有写。虽说我也不知道这堆值具体都是什么意思。\
 加上通配符，最终效果可能类似这样: `evdev:atkbd:dmi:bvn*:bvr*:bd*:svnGoogle:pnAtlas:pvr*`\
-反正这个是能匹配 Pixelbook Go(硬件代号Atlas) 的键盘啦
+反正这个是能匹配 Pixelbook Go(硬件代号 Atlas) 的键盘啦，其他型号的 Chromebook 键盘可能只需要注意修改 `pnAtlas` 这个型号部分就好（大概吧）
 
 或者可以按照 [#Remap specific device](https://wiki.archlinux.org/title/Map_scancodes_to_keycodes#Remap_specific_device) 章节所述的那样，直接使用 `input:` 开头的映射块名称，看起来更直观一些，笔记本的内置键盘也不可能有第二个，所以看心情咯。\
-匹配字段的效果类似:\
-`evdev:input:b0000000000000A*`
+执行 `cat /sys/class/input/<event_num>/device/modalias` 获取对应的 modalias。将获取到的内容的开头部分接上通配符后填入 `input:`，该设备就可以与类似这样的规则匹配：
+
+```text
+evdev:input:b0000000000000A*
+```
 
 #### 2.2.映射键值
 
@@ -173,7 +182,7 @@ Archwiki 中说的已经挺多的了（咕\
 其中 `1a` 是用 `evtest` 测出来的键值，而等号右边的字符在运行 `evtest`, `evemu-describe` 时会有输出，类似: `Event code 30 (KEY_A)`\
 将其中的 `A` 转换成小写(`a`)就是需要放到等号右侧的目标键值了。比如: `KEY_LEFTMETA` -> `leftmeta`
 
-Archwiki 中说可以在 `/usr/include/linux/input-event-codes.h` 下找，但好像会比这些工具的输出少一些，所以还是看工具的输出吧。
+Archwiki 中说可以在 `/usr/include/linux/input-event-codes.h` 下找，但好像会比这些 `evtest` 的输出少一些，所以还是看工具的输出吧
 
 #### 2.3.记得刷新HWDB的数据库哦
 
@@ -186,10 +195,20 @@ systemd-hwdb update
 udevadm trigger
 ```
 
+### 3.功能键映射
+
+现代的 Linux 桌面已经完全开始使用 Wayland 作为显示后端了，Xmodmap 不受支持，Wayland 自己也没有对应的替代工具。\
+但办法依然有很多，ArchWiki 的 [Input remap utilities](https://wiki.archlinux.org/title/Input_remap_utilities) 页面介绍了很多关于键盘重映射的工具。这里我选择的是 [keyd(by rvaiya)](https://github.com/rvaiya/keyd)
+
+由于我习惯把 `Caps_Lock` 键当作输入法切换按键用，所以在上文修改 hwdb 时我就把原键盘上对应位置的“启动台”映射到 `henkan` 上（虽然这是给日文用的，但意思差不多）。所以下文其实没有实际控制 `Caps_Lock` 而是一个完全独立的按键。而且这样也能正好用作类似 `Fn` 的按键
+
+keyd 的配置语法相当直观，我个人还是蛮喜欢的这里就不展开说了。不过如果有兴趣的话可以来看看我的配置们 [SourLemonJuice/chromebook-linux-keyboard](https://github.com/SourLemonJuice/chromebook-linux-keyboard)\
+（如果到时候它变为公开了的话）（链接先丢到这里）
+
 ## --、碎碎念
 
 - 其实到现在我也不清楚 [EC/集成控制器](https://chromium.googlesource.com/chromiumos/platform/ec/+/d92daea73957789df43e458d31fadae7d2c64989/README.md) 是怎么参与启动流程的
 - 所以 AP 到底指代的是什么 ChromeOS 还是处理器硬件模块，指代关系怎么老是变化阿喂
 - 你知道吗，我因为偷懒花了80多块钱买 SuzyQ... 有能力的花完全可以自己买几个电阻和分线版做一个呀
 - 我的2023年是和 Nintendo Switch 过的，2024上半年是和 Chromebook 过的，要不回头买点别的旧的能“破解/不走寻常路”的怪设备当成个爱好玩233
-- 要不是我真的喜欢 Pixelbook Go 的外观和做工，我才不会折腾这么多东西呢，有关 Chromebook 的社区资料真的没多少（累
+- 要不是我真的喜欢 Pixelbook Go 的外观和做工，才不会折腾这么多东西呢，有关 Chromebook 的社区资料真的没多少（累
