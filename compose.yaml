@@ -23,6 +23,8 @@ services:
     pull_policy: build
     container_name: sourlemonjuiceblog-BuildSite
     command: [ "bundle", "exec", "jekyll", "build" ]
+    environment:
+      - JEKYLL_ENV=production
     volumes:
       - type: bind
         source: ./
