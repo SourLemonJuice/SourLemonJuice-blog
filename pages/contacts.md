@@ -34,10 +34,10 @@ I'll put some social media on my GitHub page if they are matter for me. Therefor
 Honestly, if someone publishes their messaging account in a public place they will have their reasons. Maybe for find like-minded people or something else.\
 But this is the pure public internet, and I don't want be spammed.
 
-But you still can email me or DM me on Bluesky. awa
+You still can email me or DM me on Bluesky. awa
 
 Well, take some jokes:
 
 - [Discord(fake)](https://youtu.be/dQw4w9WgXcQ)
-- [腾讯QQ(fake)](https://open.spotify.com/track/4PTG3Z6ehGkBFwjybzWkR8)
-- [微信(fake)](https://en.wikipedia.org/wiki/Never_Gonna_Give_You_Up)
+- [Tencent QQ(fake)](https://open.spotify.com/track/4PTG3Z6ehGkBFwjybzWkR8)
+- [WeChat(fake)](https://en.wikipedia.org/wiki/Never_Gonna_Give_You_Up)
