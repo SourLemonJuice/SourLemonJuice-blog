@@ -1,9 +1,9 @@
 ---
-permalink: /policy/privacy
+permalink: /policies/privacy
 lang: "zh-Hans"
 title: "隐私政策"
 redirect_from:
-  - /policies/privacy
+  - /policy/privacy
 ---
 
 您访问本网站就意味着您接受我们使用以下的所有第三方服务的完整功能来分析用户行为。\
