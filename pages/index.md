@@ -1,7 +1,7 @@
 ---
 permalink: "/"
 layout: "home"
-lang: "zho-Hans"
+lang: "zh-Hans"
 title: "SourLemonJuice-blog"
 list_title: "帖子列表"
 ---

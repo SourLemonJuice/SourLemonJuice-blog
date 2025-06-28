@@ -12,14 +12,9 @@ exclude: ["README.md", "docs/", "Dockerfile", "compose.yaml", "*.sh"]
 encoding: utf-8
 # 时区设置
 timezone: Asia/Shanghai
-# 全局默认缺省语言(尽量使用最新的标准)
-# ---
-# 关于需要使用什么语言标签(即 IETF 语言标签): https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/lang
-# 维基百科上的 IETF 语言标签(整体组合方式): https://en.wikipedia.org/wiki/IETF_language_tag
-# 维基百科上的 ISO_639-3(第一位的"语言"代号): https://en.wikipedia.org/wiki/ISO_639-3
-# 维基百科上的 ISO_3166-1_alpha-2(两位的"地区"代号): https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
-# 维基百科上的 ISO_15924("书写方式"代号): https://en.wikipedia.org/wiki/ISO_15924
-lang: eng
+# 全局默认缺省语言
+# IETF tag: https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/lang
+lang: en
 
 # 网站页脚描述
 description:
@@ -134,7 +129,7 @@ defaults:
       path: "posts/简体中文/"
       type: posts
     values:
-      lang: zho-Hans
+      lang: zh-Hans
   # posts v2
   # 主旨大概就是弱化时间和语言概念吧，大概
   - scope:
@@ -143,7 +138,7 @@ defaults:
     values:
       layout: post
       permalink: "/:slugified_categories/:month/:title"
-      lang: zho-Hans
+      lang: zh-Hans
       creative_commons:
         ShortName: CC BY 4.0
         URL: "https://creativecommons.org/licenses/by/4.0/"

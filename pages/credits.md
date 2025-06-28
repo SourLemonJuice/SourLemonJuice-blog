@@ -1,6 +1,6 @@
 ---
 permalink: "/credits"
-lang: "eng"
+lang: "en"
 title: "Credits"
 ---
 

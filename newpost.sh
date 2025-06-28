@@ -32,7 +32,7 @@ fi
 
 cat <<EOF > "${post_path}"
 ---
-lang: "zho-Hans"
+lang: "zh-Hans"
 title: "${post_id}"
 date: $(date "+%Y-%m-%d %R %z")
 ---

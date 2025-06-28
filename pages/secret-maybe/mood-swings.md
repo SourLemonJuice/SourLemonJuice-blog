@@ -1,6 +1,6 @@
 ---
 permalink: "/about/secret/mood-swings"
-lang: "zho-Hans"
+lang: "zh-Hans"
 noindex: true
 ---
 

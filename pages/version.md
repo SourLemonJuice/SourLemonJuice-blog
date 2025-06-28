@@ -1,7 +1,7 @@
 ---
 permalink: "/version"
 layout: "version"
-lang: "eng"
+lang: "en"
 title: "Build Information"
 noindex: true
 ---

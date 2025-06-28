@@ -1,6 +1,6 @@
 ---
 permalink: "/about/future"
-lang: "zho-Hans"
+lang: "zh-Hans"
 title: "在可能的未来"
 noindex: true
 ---

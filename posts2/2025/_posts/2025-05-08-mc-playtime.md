@@ -1,5 +1,5 @@
 ---
-lang: "eng"
+lang: "en"
 title: "Minecraft Playtime Command Block"
 date: 2025-05-08 03:55 +0800
 ---

@@ -1,6 +1,6 @@
 ---
 permalink: "/about/computer"
-lang: "eng"
+lang: "en"
 title: "The Computer Science"
 ---
 

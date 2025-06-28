@@ -3,7 +3,7 @@ permalink: "/about/contacts"
 redirect_from:
   - "/about/social"
   - "/about/contact"
-lang: "eng"
+lang: "en"
 title: "Contacts"
 ---
 

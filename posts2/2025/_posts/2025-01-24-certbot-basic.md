@@ -1,5 +1,5 @@
 ---
-lang: "zho-Hans"
+lang: "zh-Hans"
 title: "TLS 证书申请工具 certbot 的基本用法"
 date: 2025-01-24 21:59 +0800
 ---

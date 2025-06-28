@@ -1,6 +1,6 @@
 ---
 permalink: "/about/secret/transgender"
-lang: "zho-Hans"
+lang: "zh-Hans"
 sitemap: flase
 noindex: true
 ---

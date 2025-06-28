@@ -1,6 +1,6 @@
 ---
 permalink: /policy/privacy
-lang: "zho-Hans"
+lang: "zh-Hans"
 title: "隐私政策"
 redirect_from:
   - /policies/privacy

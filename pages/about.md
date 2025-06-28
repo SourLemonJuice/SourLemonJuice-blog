@@ -1,6 +1,6 @@
 ---
 permalink: "/about"
-lang: "zho-Hans"
+lang: "zh-Hans"
 title: "关于"
 ---
 
