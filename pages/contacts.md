@@ -27,7 +27,7 @@ I'll put some social media on my GitHub page if they are matter for me. Therefor
 - [Bluesky](https://bsky.app/profile/sourlemonjuice.bsky.social)
 - [Mastodon - mastodon.social](https://mastodon.social/@SourLemonJuice)
 - [Twitter/X](https://x.com/BitterCharChar)
-- [YouTube](https://www.youtube.com/@BitterCharChar)
+- [YouTube](https://www.youtube.com/@SourLemonJuice987)
 
 ## Messaging
 
