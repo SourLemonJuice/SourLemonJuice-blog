@@ -74,11 +74,14 @@ minima:
       url: "https://mastodon.social/@SourLemonJuice"
     - title: Twitter/X
       icon: x-twitter
-      url: "https://x.com/LemonJuice3893"
+      url: "https://x.com/BitterCharChar"
+    - title: Bluesky
+      icon: bluesky
+      url: "https://bsky.app/profile/sourlemonjuice.bsky.social"
 
-  contacts:
-    - text: "@sourlemonjuice:matrix.org"
-      url: "https://matrix.to/#/@sourlemonjuice:matrix.org"
+  # contacts:
+    # - text: "@sourlemonjuice:matrix.org"
+    #   url: "https://matrix.to/#/@sourlemonjuice:matrix.org"
 
   # minima 顶部的连接
   nav_pages:
