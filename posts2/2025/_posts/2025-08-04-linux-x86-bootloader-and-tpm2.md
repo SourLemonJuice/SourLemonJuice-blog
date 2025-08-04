@@ -10,7 +10,7 @@ It's not a full tutorial, but an overall concept explanation with many examples 
 
 ## Basic history about bootloader
 
-Installing a bootloader in Arch Linux are always be the first difficult and complex step that user encounter. But still under control, the beginners just need to run a few commands to get a GRUB install:
+Installing the bootloader in Arch Linux is always the first difficult and complex step that user encounter. But still under control, the beginners just need to run a few commands to get a GRUB install:
 
 ```bash
 # root
@@ -154,6 +154,17 @@ You can run these commands to generate a key pair into the default path:
 ukify genkey \
     --pcr-private-key /etc/systemd/tpm2-pcr-private-key.pem \
     --pcr-public-key /etc/systemd/tpm2-pcr-public-key.pem
+```
+
+To use this key pair, there's some configuration need to be added to the ukify config file:
+
+```ini
+# /etc/kernel/uki.conf
+
+# <previous content>
+[PCRSignature]
+PCRPrivateKey=/etc/systemd/tpm2-pcr-private-key.pem
+PCRPublicKey=/etc/systemd/tpm2-pcr-public-key.pem
 ```
 
 After generated a key pair. When next time ukify generating UKI image it will call systemd-measure to pre-calculate the PCR 11, and sign the value by above cert pair then insert the signatures into `.pcrsig` UKI executable section.\
