@@ -2,6 +2,7 @@
 lang: "en"
 title: "Linux x86 bootloader and TPM2 policy disk encryption explanation"
 date: 2025-08-04 16:15 +0800
+mdate: 2025-08-05 10:14 +0800
 ---
 
 In regular Linux x86 distro, GRUB by GNU is still being the default bootloader. Personally, I don't like GNU's overall style, but no matter what as time changes, the latest boot method UKI(Unified Kernel Image) is the future.
@@ -107,6 +108,8 @@ They are both ok, and I tried both of them for a long time.
 
 > By the way, the `.efi` file is actually a PE format executable, just like Windows(because Microsoft is the leader of UEFI).
 
+However, not only ukify can generate UKI. Like dracut can also do it, I used it for a long time in the past too, but more complex then ukify.
+
 ## systemd-boot
 
 *[systemd-boot](https://wiki.archlinux.org/title/Systemd-boot)* is a UEFI boot manager, it's mainly used to chain-loading other efi files.\
@@ -162,7 +165,7 @@ To use this key pair, there's some configuration need to be added to the ukify c
 # /etc/kernel/uki.conf
 
 # <previous content>
-[PCRSignature]
+[PCRSignature:default]
 PCRPrivateKey=/etc/systemd/tpm2-pcr-private-key.pem
 PCRPublicKey=/etc/systemd/tpm2-pcr-public-key.pem
 ```
@@ -171,6 +174,9 @@ After generated a key pair. When next time ukify generating UKI image it will ca
 The public key is also placed in executable section `.pcrpkey`. With these two section, the application now can ensure the bootloader has not been tampered with.
 
 You can check all the sections content with `ukify inspect <UKI path>`.
+
+> I don't know what the `[PCRSignature:NAME]` means, but if don't add a NAME here, everything will be wrong.\
+> The phases of signs can also be defined with: `Phases=enter-initrd`, but I don't really know how to use them, just use the [defaults](https://man.archlinux.org/man/ukify.1.en#%5BPCRSignature:%3Ci%3ENAME%3C/i%3E%5D_section).
 
 ## Enroll TPM2 policy into LUKS2 disk
 
@@ -208,6 +214,12 @@ And you maybe seen the `--tpm2-public-key-pcrs` flag looks so attractive, can I 
 A TPM2 PIN is still recommended.
 
 After enroll, you can try to close and reopen your LUKS2 disk. Since the secret is independent of the PCR's value, feel free to turn off and on secure boot as a revenge. awa
+
+## Thanks for
+
+- all the manual/wiki links
+- [A Deep Dive into TPM-based BitLocker Drive Encryption | itm4n's blog](https://itm4n.github.io/tpm-based-bitlocker/)
+- [On Secure Boot, TPMs, SBAT, and downgrades -- Why Microsoft hasn't fixed BitLocker yet — Neodyme](https://neodyme.io/en/blog/bitlocker_why_no_fix/)
 
 ## End
 
