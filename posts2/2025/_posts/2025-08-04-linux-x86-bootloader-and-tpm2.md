@@ -175,8 +175,10 @@ The public key is also placed in executable section `.pcrpkey`. With these two s
 
 You can check all the sections content with `ukify inspect <UKI path>`.
 
-> I don't know what the `[PCRSignature:NAME]` means, but if don't add a NAME here, everything will be wrong.\
-> The phases of signs can also be defined with: `Phases=enter-initrd`, but I don't really know how to use them, just use the [defaults](https://man.archlinux.org/man/ukify.1.en#%5BPCRSignature:%3Ci%3ENAME%3C/i%3E%5D_section).
+---
+
+I don't know what the `[PCRSignature:NAME]` means, but if don't add a NAME here, everything will be wrong.\
+The phases of signs can also be defined with: `Phases=enter-initrd`, but I don't really know how to use them, just use the [defaults](https://man.archlinux.org/man/ukify.1.en#%5BPCRSignature:%3Ci%3ENAME%3C/i%3E%5D_section).
 
 ## Enroll TPM2 policy into LUKS2 disk
 
@@ -218,7 +220,7 @@ After enroll, you can try to close and reopen your LUKS2 disk. Since the secret 
 ## Thanks for
 
 - all the manual/wiki links
-- [A Deep Dive into TPM-based BitLocker Drive Encryption | itm4n's blog](https://itm4n.github.io/tpm-based-bitlocker/)
+- [A Deep Dive into TPM-based BitLocker Drive Encryption - itm4n's blog](https://itm4n.github.io/tpm-based-bitlocker/)
 - [On Secure Boot, TPMs, SBAT, and downgrades -- Why Microsoft hasn't fixed BitLocker yet — Neodyme](https://neodyme.io/en/blog/bitlocker_why_no_fix/)
 
 ## End
