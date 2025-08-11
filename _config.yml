@@ -79,9 +79,9 @@ minima:
       icon: bluesky
       url: "https://bsky.app/profile/sourlemonjuice.bsky.social"
 
-  # contacts:
-    # - text: "@sourlemonjuice:matrix.org"
-    #   url: "https://matrix.to/#/@sourlemonjuice:matrix.org"
+  contacts:
+    - text: "SourLemonJuice.net"
+      url: "https://SourLemonJuice.net"
 
   # minima 顶部的连接
   nav_pages:
