@@ -110,5 +110,8 @@ mount --bind -o "ro" /path/dir /path/dir
 - [chmod(1) — Arch manual pages](https://man.archlinux.org/man/chmod.1.en)
 - [chattr(1) — Arch manual pages](https://man.archlinux.org/man/chattr.1.en)
 - [File permissions and attributes - ArchWiki](https://wiki.archlinux.org/title/File_permissions_and_attributes#File_attributes)
-- [4.12. Bind Mounts and Context-Dependent Path Names | Global File System 2 | Red Hat Enterprise Linux | 6 | Red Hat Documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/6/html/global_file_system_2/s1-manage-pathnames)
+- [4.12. Bind Mounts and Context-Dependent Path Names - Global File System 2 - Red Hat Enterprise Linux - 6 - Red Hat Documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/6/html/global_file_system_2/s1-manage-pathnames)
 - [linux - Explanation of nodev and nosuid in fstab - Server Fault](https://serverfault.com/a/547240/1244499)
+
+Jekyll 的 markdown 解析器把 Red Hat 链接里的 `|` 解析成表格了...\
+所以手动换成 `-` 咯，抱怨一下
