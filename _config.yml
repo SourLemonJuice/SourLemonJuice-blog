@@ -45,7 +45,6 @@ jekyll-minifier:
     harmony: true
 
 # 在一些 搜索引擎调查工具 中验证网站
-# google_site_verification: "8LopVjCQclgmLdixaxx9rqAB55ji9yoRrtL5TZapDDM"
 webmaster_verifications:
   google: 8LopVjCQclgmLdixaxx9rqAB55ji9yoRrtL5TZapDDM
   bing: BC0CFA01D203CF6FDE0923D19DA3EFEE
@@ -54,6 +53,9 @@ webmaster_verifications:
 analytics:
   # Google Analytics
   google_analytics: true
+
+feed:
+  excerpt_only: true
 
 # 设置 minima
 minima:
