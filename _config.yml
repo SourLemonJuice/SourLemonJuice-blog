@@ -1,4 +1,3 @@
-# theme: minima
 remote_theme: https://github.com/SourLemonJuice/minima-for-SourLemonJuice
 
 title: SourLemonJuice-blog
@@ -12,24 +11,17 @@ exclude: ["README.md", "docs/", "Dockerfile", "compose.yaml", "*.sh"]
 encoding: utf-8
 # 时区设置
 timezone: Asia/Shanghai
-# 全局默认缺省语言
-# IETF tag: https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/lang
 lang: en
 
-# 网站页脚描述
-description:
-  A blog of 酸柠檬猹/SourLemonJuice. Trying to be a gentle and understanding person.
+description: A blog of 酸柠檬猹/SourLemonJuice. Trying to be a gentle and understanding person.
 
 author:
   name: "酸柠檬猹/SourLemonJuice"
   email: "SourLemonJuice233@outlook.com"
 
-# jekyll 插件设置
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
-  # 生成 seo(Search engine optimization)/搜索引擎优化 标签
-  # 注意: minima 主题的 _includes/head.html 中已经添加了 {% seo %}
   - jekyll-seo-tag
   - jekyll-last-modified-at
   - jekyll-redirect-from
@@ -39,34 +31,28 @@ plugins:
   # 默认情况下最后被需求的插件会被最后执行，所以一定要保持这行配置是插件序列中的最后一项
   - jekyll-sitemap
 
-# enable ES6
+# Enable ES6
 jekyll-minifier:
   uglifier_args:
     harmony: true
 
-# 在一些 搜索引擎调查工具 中验证网站
 webmaster_verifications:
   google: 8LopVjCQclgmLdixaxx9rqAB55ji9yoRrtL5TZapDDM
   bing: BC0CFA01D203CF6FDE0923D19DA3EFEE
 
 # Some analytics tools added with me
 analytics:
-  # Google Analytics
   google_analytics: true
 
 feed:
   excerpt_only: true
 
-# 设置 minima
 minima:
-  # 主题为 自动
   skin: auto
-  # minima 主题的日期格式
-  # https://zh.wikipedia.org/wiki/ISO_8601
+  # Time format: https://zh.wikipedia.org/wiki/ISO_8601
   date_format: "%FT%R%z"
   date_format_no_hour: "%F"
   privacy_dialog: true
-  # 社交媒体链接
   social_links:
     - title: GitHub Profile
       icon: github
@@ -91,7 +77,7 @@ minima:
     - "pages/contacts.md"
     - "pages/archives.html"
 
-# 设置默认 Front-Matter
+# Default front-matter
 defaults:
   # all the pages(not posts)
   - scope:
@@ -104,8 +90,8 @@ defaults:
       creative_commons:
         ShortName: CC BY 4.0
         URL: "https://creativecommons.org/licenses/by/4.0/"
-  - # For private pages...
-    scope:
+  # For private pages...
+  - scope:
       path: "pages/secret-maybe/"
       type: pages
     values:
