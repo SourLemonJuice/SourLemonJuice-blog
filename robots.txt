@@ -1,6 +1,4 @@
-# Look this: https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt
-# It's con't work
+User-agent: *
+Allow: /
 
-# Allow all url
-user-agent: *
-allow: /
+Sitemap: https://blog.charchar.dev/sitemap.xml
