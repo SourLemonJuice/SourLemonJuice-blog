@@ -16,7 +16,7 @@ title: "关于"
 
 ## 计算机科学
 
-[The Computer Science]({{- site.baseurl -}}/about/computer)
+[The Computer Science]({{ site.baseurl }}/about/computer)
 
 ## 作为一个人类
 
@@ -94,4 +94,4 @@ title: "关于"
 
 ## 碎碎念？
 
-[碎碎念]({{- site.baseurl -}}/about/secret/mood-swings)
+[碎碎念]({{ site.baseurl }}/about/secret/mood-swings)

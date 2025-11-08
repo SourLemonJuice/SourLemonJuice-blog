@@ -2,14 +2,14 @@ remote_theme: https://github.com/SourLemonJuice/minima-for-SourLemonJuice
 
 title: SourLemonJuice-blog
 url: "https://sourlemonjuice.github.io"
-# 域名后，页面url前，的基本url
-baseurl: "/SourLemonJuice-blog"
+# <url><baseurl>/pages/xxx.html
+# If on GitHub Pages, it will provided by cli: bundle exec jekyll build --baseurl "/SourLemonJuice-blog"
+# No need to set here
+#baseurl: "/SourLemonJuice-blog"
 # 需要排除的文件 [DIR, FILE, ...] 记得加上所有不以 '_' '.' 开头的文件和文件夹
 # Gemfile 与 Gemfile.lock 会被默认忽略
 exclude: ["README.md", "docs/", "Dockerfile", "compose.yaml", "*.sh"]
-# 页面编码(utf-8是jekyll 2.0.0及以后的默认值)
 encoding: utf-8
-# 时区设置
 timezone: Asia/Shanghai
 lang: en
 
@@ -26,7 +26,6 @@ plugins:
   - jekyll-last-modified-at
   - jekyll-redirect-from
   - jekyll-minifier
-  # 生成 sitemap/站点地图
   # 注意: "网站地图" 需要在其他 "有生成文件功能" 的插件执行后生成
   # 默认情况下最后被需求的插件会被最后执行，所以一定要保持这行配置是插件序列中的最后一项
   - jekyll-sitemap
@@ -40,7 +39,7 @@ webmaster_verifications:
   google: 8LopVjCQclgmLdixaxx9rqAB55ji9yoRrtL5TZapDDM
   bing: BC0CFA01D203CF6FDE0923D19DA3EFEE
 
-# Some analytics tools added with me
+# Some analytics tools added by myself
 analytics:
   google_analytics: true
 
