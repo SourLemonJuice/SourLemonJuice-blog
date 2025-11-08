@@ -22,7 +22,7 @@ The main framework **Jekyll** is made available as source code [here](https://je
 
 ## Thanks for
 
-- [Docker](https://www.docker.com/) saving ruby from runtime exception
+- (Before) [Docker](https://www.docker.com/) saving ruby from runtime exception
 
 ## Deployment
 
