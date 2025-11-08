@@ -7,6 +7,12 @@
 
 > 前期的测试都是通过 `GitHub Action` 测试的所以有很多 force 的提交和 hotfix 什么的，抱歉啦
 
+## 变更
+
+最初的网站完全托管在 GitHub Pages 上，URL 是这个：<https://sourlemonjuice.github.io/SourLemonJuice-blog/>
+
+2025-11-08，在 [Action](https://github.com/SourLemonJuice/SourLemonJuice-blog/actions/runs/19187951495) 运行完成后正式迁移到了独立的域名上：<https://blog.charchar.dev>
+
 ## 维护文档
 
 所有维护或说明用的文档都放在 [docs/](docs/) 下了（很可能过时，但改动应该不会太大）\
