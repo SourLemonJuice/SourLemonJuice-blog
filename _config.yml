@@ -35,14 +35,6 @@ jekyll-minifier:
   uglifier_args:
     harmony: true
 
-webmaster_verifications:
-  google: 8LopVjCQclgmLdixaxx9rqAB55ji9yoRrtL5TZapDDM
-  bing: BC0CFA01D203CF6FDE0923D19DA3EFEE
-
-# Some analytics tools added by myself
-analytics:
-  google_analytics: true
-
 feed:
   excerpt_only: true
 
