@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://blog.charchar.dev/sitemap.xml
+Sitemap: https://blog.sourlemonjuice.net/sitemap.xml
