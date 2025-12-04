@@ -1,4 +1,6 @@
-# 如何配置 ESP-IDF 中的 Kconfig 们
+---
+title: "如何配置 ESP-IDF 中的 Kconfig 们"
+---
 
 ## 1.Kconfig 在 esp-idf 里是干什么的
 

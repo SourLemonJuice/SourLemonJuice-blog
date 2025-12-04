@@ -1,5 +1,6 @@
 ---
 title: "在 Chromebook 上安装完整 Linux 发行版的方法总结"
+tags: "greatest-hits"
 mdate: 2025-03-05 08:44 +0800
 ---
 

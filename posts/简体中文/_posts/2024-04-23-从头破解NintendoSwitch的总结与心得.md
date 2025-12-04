@@ -1,6 +1,6 @@
 ---
 title: "从头破解 Nintendo Switch 的总结与心得"
-tags: ["Nintendo", "Nintendo-Switch", "Hacking"]
+tags: ["Nintendo", "Nintendo-Switch", "Hacking", "greatest-hits"]
 has_modified: true
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "命令行界面程序的各种参数设计模式与风格"
+tags: "greatest-hits"
 ---
 
 CLI/Command line interface/命令行界面 是任何接触过 Unix 系统乃至大多数了解过计算机系统的人都有过认识或有用过的程序界面。\

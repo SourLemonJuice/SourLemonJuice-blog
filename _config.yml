@@ -41,7 +41,7 @@ feed:
 minima:
   skin: auto
   # Time format: https://zh.wikipedia.org/wiki/ISO_8601
-  date_format: "%FT%R%z"
+  date_format: "%F %R UTC%z"
   date_format_no_hour: "%F"
   privacy_dialog: true
   social_links:
@@ -52,11 +52,8 @@ minima:
       icon: mastodon
       url: "https://mastodon.social/@SourLemonJuice"
     - title: Twitter/X
-      icon: x-twitter
+      icon: twitter
       url: "https://x.com/BitterCharChar"
-    - title: Bluesky
-      icon: bluesky
-      url: "https://bsky.app/profile/sourlemonjuice.bsky.social"
 
   contacts:
     - text: "SourLemonJuice.net"
