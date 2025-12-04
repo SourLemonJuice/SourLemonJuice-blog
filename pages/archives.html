@@ -11,9 +11,9 @@ title: "Archives"
 
 <ul>
   {% for post in site.posts %}
-  <li>
-    <!-- https://shopify.github.io/liquid/filters/date/ -->
-    {{ post.date | date: site.minima.date_format_no_hour }}: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-  </li>
+    <li>
+      <code><spot>{{ post.date | date: site.minima.date_format_no_hour }}</spot></code>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
   {% endfor %}
 </ul>

@@ -1,0 +1,19 @@
+---
+permalink: "/greatest-hits"
+lang: "en"
+title: "Greatest hits"
+---
+
+{% assign tag_name = "greatest-hits" %}
+{% if site.tags[tag_name] == null %}
+  <p>No greatest hits found :(</p>
+{% else %}
+  <ul>
+    {% for post in site.tags[tag_name] %}
+      <li>
+        <code><spot>{{ post.date | date: site.minima.date_format_no_hour }}</spot></code>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
