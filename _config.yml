@@ -63,7 +63,7 @@ minima:
   nav_pages:
     - "pages/about.md"
     - "pages/contact.md"
-    - "pages/greatest-hits.html"
+    - "pages/featured.html"
     - "pages/archives.html"
 
 # Default front-matter

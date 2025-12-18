@@ -1,6 +1,6 @@
 ---
 title: "DIY SlimeVR 追踪器的总结"
-tags: "greatest-hits"
+tags: ["Featured"]
 ---
 
 ## 0.时间线

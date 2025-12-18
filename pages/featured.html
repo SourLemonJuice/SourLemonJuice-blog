@@ -1,10 +1,12 @@
 ---
-permalink: "/greatest-hits"
+permalink: "/featured"
+redirect_from:
+  - "/greatest-hits"
 lang: "en"
-title: "Greatest hits"
+title: "Featured"
 ---
 
-{% assign tag_name = "greatest-hits" %}
+{% assign tag_name = "Featured" %}
 {% if site.tags[tag_name] == null %}
   <p>No greatest hits found :(</p>
 {% else %}

@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "Linux x86 bootloader and TPM2 policy disk encryption explanation"
-tags: "greatest-hits"
+tags: ["Featured"]
 date: 2025-08-04 16:15 +0800
 mdate: 2025-08-05 10:14 +0800
 ---
