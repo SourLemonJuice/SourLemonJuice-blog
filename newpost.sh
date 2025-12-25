@@ -1,24 +1,30 @@
 #!/usr/bin/env bash
 
-if [[ "$1" == "--help" ]]; then
-    cat <<EOF
-Usage: newpost.sh [--help] [<post_id>]
+set -euo pipefail
 
-If post_id not specified, use "post" as it by default.
+function print_help {
+    cat <<EOF
+Usage: newpost.sh [--help] <post_id>
 EOF
+}
+
+if [[ "$#" -ne 1 ]]; then
+    echo -e "Arguments not enough\n"
+    print_help
+    exit 1
+fi
+
+if [[ "$1" == "--help" ]]; then
+    print_help
     exit
 fi
 
 if [[ ! -f "./_config.yml" ]]; then
     echo "This script needs to be run from the repository root"
-    exit
+    exit 1
 fi
 
-if [[ -z "$1" ]]; then
-    post_id="post"
-else
-    post_id="$1"
-fi
+post_id="$1"
 
 base_path="posts2/$(date +%Y)/_posts"
 mkdir --parents "${base_path}"
