@@ -4,13 +4,13 @@ lang: "en"
 title: "Credits"
 ---
 
-The main framework **Jekyll** is made available as source code [here](https://jekyllrb.com/).
+The main framework [Jekyll](https://jekyllrb.com) is made available as source code on [GitHub](https://github.com/jekyll/jekyll).
 
 ## Stylization
 
-- [minima-for-SourLemonJuice](https://github.com/SourLemonJuice/minima-for-SourLemonJuice)
+- [minima-for-SourLemonJuice](https://github.com/SourLemonJuice/minima-for-SourLemonJuice) (my fork from original minima)
 
-## Building/Plugins
+## Jekyll Plugins
 
 - [benbalter/jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme)
 - [gjtorikian/jekyll-last-modified-at](https://github.com/gjtorikian/jekyll-last-modified-at)
@@ -20,10 +20,6 @@ The main framework **Jekyll** is made available as source code [here](https://je
 - [jekyll/jekyll-feed](https://github.com/jekyll/jekyll-feed)
 - [jekyll/jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
 
-## Thanks for
-
-- (Before) [Docker](https://www.docker.com/) saving ruby from runtime exception
-
 ## Deployment
 
-- [GitHub Pages](https://pages.github.com/)
+- [GitHub Pages](https://pages.github.com)

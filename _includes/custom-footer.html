@@ -7,16 +7,14 @@
 {% endcomment %}
 
 {% if page.creative_commons %}
-This page published under <a href="{{ page.creative_commons.URL }}">{{ page.creative_commons.ShortName | escape }}</a> license
+This page published under <a href="{{ page.creative_commons.URL }}">{{ page.creative_commons.ShortName | escape }}</a>
 {% else %}
 This page does not specify a publishing license
 {% endif %}
 <br>
 
-This site is made possible by the
-<a href="https://jekyllrb.com/">Jekyll</a> and other <a href="{{ site.baseurl }}/credits">open source projects</a>
+This site is made possible by these <a href="{{ site.baseurl }}/credits">open source projects</a>
 
 <br>
-<a href="{{ site.baseurl }}/policies/privacy">Privacy</a>
-| <a href="{{ site.baseurl }}/version">Build Info</a>
-| <a href="https://github.com/SourLemonJuice/SourLemonJuice-blog">Website Repository</a>
+<a href="https://github.com/SourLemonJuice/SourLemonJuice-blog">Website Repo</a>
+| <a href="{{ site.baseurl }}/policies/privacy">Privacy</a>
