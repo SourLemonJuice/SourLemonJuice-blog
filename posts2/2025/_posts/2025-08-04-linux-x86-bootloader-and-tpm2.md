@@ -1,9 +1,9 @@
 ---
 lang: "en"
 title: "Linux x86 bootloader and TPM2 policy disk encryption explanation"
-tags: ["Featured"]
 date: 2025-08-04 16:15 +0800
 mdate: 2025-08-05 10:14 +0800
+tags: ["Featured"]
 ---
 
 In regular Linux x86 distro, GRUB by GNU is still being the default bootloader. Personally, I don't like GNU's overall style, but no matter what as time changes, the latest boot method UKI(Unified Kernel Image) is the future.
