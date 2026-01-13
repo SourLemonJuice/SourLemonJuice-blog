@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>REDIRECTING...</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: system-ui, sans-serif;
+      }
+
+      #warning {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+    <h2 id="warning">
+      The URI appears to be incorrect, redirecting to homepage...
+    </h2>
+    <script>
+      try {
+        const oldPrefix = "/SourLemonJuice-blog";
+        let pathname = window.location.pathname;
+
+        if (!pathname.startsWith(oldPrefix)) {
+          throw new Error("Old prefix not found.");
+        }
+        pathname = pathname.slice(oldPrefix.length);
+
+        if (!pathname || pathname === "") {
+          pathname = "/";
+        }
+
+        const destinationURL = new URL(
+          pathname,
+          "https://sourlemonjuice.github.io"
+        );
+        console.log("Redirecting to:", destinationURL.href);
+        window.location.href = destinationURL.href;
+      } catch (error) {
+        console.error("Redirection failed:", error.message);
+
+        const warning = document.getElementById("warning");
+        if (warning) {
+          document.querySelector("h1").textContent = "Redirection Failed";
+          warning.style.display = "block";
+        } else {
+          console.error("Get warning box failed");
+        }
+      }
+    </script>
+  </body>
+</html>
